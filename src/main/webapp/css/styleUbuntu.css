@@ -1,0 +1,454 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    color: white;
+}
+
+.Ubunto {
+    z-index: 1;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: transparent;
+    position: fixed;
+    padding-top: 47px;
+    padding-bottom: 47px;
+    width: 100%;
+    border-radius: 10px;
+    z-index: 100;
+}
+
+nav .all {
+    display: flex;
+    position: absolute;
+}
+
+nav .register {
+    width: 250px;
+    margin-top: 15px;
+    margin-left: 60px;
+}
+
+nav .logo{
+    font-size: 23px;
+    cursor: pointer;
+    position: relative;
+    right: 5.5%;
+    color: #ffffff;
+    width: 100px;
+    margin: 10px 130px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav .register .signup button{
+    cursor: pointer;
+    font-size: 15px;
+    margin: 8px;
+    padding: 8px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 3px#ffffff41;
+    transition: 1s;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    background-color: #ec2e2083;
+    transition: 1s;
+}
+
+nav .register .signup button:hover {
+    text-decoration: none;
+    border: none;
+    box-shadow: 0 0 10px#ec2f20;
+    transition: 1s;
+}
+
+nav .register .login button{
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 8px;
+    right: -100%;
+    padding: 8px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 10px;
+    border: none;
+    color: #ec2f20;
+    box-shadow: 0 0 2px#ec2f20;
+    font-weight: bold;
+    transition: 1s;
+}
+
+nav .register .login button:hover {
+    text-decoration: none;
+    border: none;
+    box-shadow: 0 0 10px#ec2f20;
+    transition: 1s;
+}
+
+nav .logo span{
+    transition: 0.7s;
+}
+
+nav .logo span:hover{
+    color: #ec2f20;
+    transition: 0.7s;
+}
+
+nav .choice{
+    padding-left: 130px;
+    padding-right: 100px;
+    margin-left: -36px;
+    margin-right: 1px;
+    padding-top: 25px;
+    width: 750px;
+    z-index: 1000;
+}
+
+nav .choice a{
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 8px 8px 8px 8px;
+    left: 80%;
+    transition: 1s;
+    z-index: 1000;
+}
+
+nav .choice a:hover {
+    text-decoration: underline;
+    color: #ec2f20;
+    transition: 1s;
+}
+
+nav.blurred {
+    backdrop-filter: blur(10px); /* Apply backdrop filter for blur effect */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease; /* Smooth transition */
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background: rgb(0, 0, 0);
+}
+
+.container {
+    margin-bottom: 50px;
+}
+
+.review {
+    width: 100%;
+    height: 50vh;
+    margin-top: 80px;
+}
+
+.Ubunto .container .review .ubuntuOperationSystem {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.review .describtion h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    color: #c2271c;
+    top: 35%;
+    left: 16%;
+    position: absolute;
+    margin-top: 70px;
+    z-index: 100;
+}
+
+.review .describtion .username {
+    color: rgba(255, 255, 255, 0.69);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 110px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 40px;
+    margin-top: 40px;
+    padding-bottom: 55px;
+    text-align: left;
+    position: absolute;
+    left: 17%;
+    top: 35%;
+    width: 430px;
+    height: 300px;
+    line-height: 50px;
+    font-size: 25px;
+    letter-spacing: 1px;
+    box-shadow: 0 0 2px #ec2f20;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 20px;
+}
+
+.review .describtion .password {
+    color: rgba(255, 255, 255, 0.69);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 170px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 40px;
+    margin-top: 40px;
+    padding-bottom: 55px;
+    text-align: left;
+    position: absolute;
+    left: 17%;
+    top: 35%;
+    width: 430px;
+    height: 300px;
+    line-height: 50px;
+    font-size: 25px;
+    letter-spacing: 1px;
+    box-shadow: 0 0 2px #ec2f20;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 20px;
+}
+
+.review i {
+    font-size: 40px;
+    color: #c5251ab9;
+    position: absolute;
+    top: 18.5%;
+    left: 22%;
+    animation: animateIcon 2s ease-in-out infinite; /* Use the defined animation */
+}
+
+@keyframes animateIcon {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(40px); /* Move icon 100px to the right */
+    }
+    100% {
+        transform: translateX(0); /* Move back to the starting position */
+    }
+}
+
+.review h1 {
+    text-transform: uppercase;
+    position: absolute;
+    padding: 50px;
+    padding-top: 10px;
+    margin: 50px;
+    left: 25%;
+    font-size: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: linear-gradient(45deg, rgb(60, 2, 2), #4100a3, #ec2f20,
+    rgb(60, 2, 2), #4100a3, #ec2f20,
+    rgb(60, 2, 2), #4100a3, #ec2f20,
+    rgb(60, 2, 2), #4100a3, #ec2f20); 
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 400% 400%;
+    animation: animate 15s ease infinite;
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0 0;
+    }
+    25%{
+        background-position: 100% 0;
+    }
+    50%{
+        background-position: 100% 100%;
+    }
+    75%{
+        background-position: 0 100%;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+
+.review .review_box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: right;
+    margin: 0px 50px;
+    grid-gap: 20px;
+    padding-left: 1290px;
+    width: 600px;
+    position: relative;
+    top: 50%;
+    left: 10%;
+    bottom: 50px;
+}
+
+.review .review_box {
+    width: 450px; /* Adjust width as needed */
+    height: 150px;
+    border-radius: 20px;
+    margin: 50px;
+    background: #00000088;
+    padding: 20px 0;
+    left: 51%;
+    top: 37%;
+    box-shadow: 0 0 2px #ec2f20;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center; /* Center content vertically */
+    text-align: center;
+    transition: 1s;
+}
+
+.review .review_box:hover {
+    box-shadow: 0 0 20px #ec2f20;
+    transform: translateY(-15px); /* Lift card up by 15px on hover */
+    transition: 1s;
+}
+
+.review .review_box .profile_image {
+    position: absolute;
+    height: 150px;
+    border-radius: 20px;
+    background: linear-gradient(to top , black 55% , rgba(0, 0, 0, 0.348));
+    background-size: cover;
+    background-position: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #adadad; 
+    font-size: 1px;
+}
+
+footer{
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+footer .main{
+    width: 100%;
+    height: 190px;
+    background-color: #00000071;
+    display: flex;
+    padding-top: 11px;
+    margin-top: 350px;
+    justify-content: space-around;
+}
+
+footer .main .tag{
+    margin: 10x 0;
+}
+
+footer .main .tag .center{
+    text-align: center;
+}
+
+footer .main .tag h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 45px;
+    text-transform: uppercase;
+    background-image: linear-gradient(45deg, rgb(60, 2, 2), #4100a3, #ec2f20,
+    rgb(60, 2, 2), #4100a3, #ec2f20,
+    rgb(60, 2, 2), #4100a3, #ec2f20,
+    rgb(60, 2, 2), #4100a3, #ec2f20); 
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 400% 400%;
+    animation: animate 15s ease infinite;
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0 0;
+    }
+    25%{
+        background-position: 100% 0;
+    }
+    50%{
+        background-position: 100% 100%;
+    }
+    75%{
+        background-position: 0 100%;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+
+footer .main .tag .social_link{
+    display: flex;
+}
+
+footer .main .tag .social_link a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.511);
+    border: 1px solid rgba(255, 255, 255, 0.459);
+    position: relative;
+    left: 9%;
+    margin: 5px 5px;
+    margin-top: 40px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    z-index: 10;
+    box-shadow: 0 0 20px 10px rgba(0,0,0,0.05);
+}
+
+footer .main .tag .social_link a .fa-brands{
+    font-size: 22px;
+    line-height: 40px;
+    z-index: 10;
+    position: relative;
+    transition: 1s;
+}
+
+footer .main .tag .social_link a:hover i{
+    color: #ec2f20;
+    transition: 1s;
+}
+
+footer .main .tag .copyright {
+    color: rgba(255, 255, 255, 0.53);
+    font-size: 11px;
+    font-family: "Poppins", sans-serif;
+    padding-top: 25px;
+    margin-left: 8px;
+}
+
+footer .main .tag .copyright a {
+    color: #ec2f20;
+}
+
+footer .main .tag .copyright a:hover {
+    color: white;
+}

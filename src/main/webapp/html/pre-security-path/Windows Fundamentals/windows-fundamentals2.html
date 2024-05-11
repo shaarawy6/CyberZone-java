@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows Fundamentals 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../../../css/section-page.css">
+    <link rel="icon" href="../../../images/Windows-Fundamentals-module.png" type="images/x-icon">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+    <script src="../../../javaScript/particles-config.js"></script>
+    <main class="container">
+        <nav>
+            <div class="all">
+                <div class="logo">
+                    <a href="../../../html/index.html"><h1><span>Cyber</span>zone</h1></a>
+                </div>
+                <div class="choice"> <!--choice for desktop-->
+                    <a href="../../../html/home.html">Home</a> <!--<i></i> tag "icon"-->
+                    <a href="../../../html/paths.html">Paths</a>
+                    <a href="../../../html/modules.html">Modules</a>
+                    <a href="../../../jsp/downloads.jsp">Downloads</a>
+                    <a href="https://cyberzone1.pythonanywhere.com/">Apps</a>
+                    <a href="../../../html/ubuntu.html">Ubuntu</i></a>
+                </div>
+                <div class="register">
+                    <a href="../../../html/sign-in.html" class="login"><button >Login</button></a>
+                    <a href="../../../html/sign-up.html" class="signup"><button >sign up</button></a>
+                </div>
+            </div>
+        </nav>
+        <div class="banner-container">
+            <div class="banner">
+                <img class = "banner-icon" src="../../../images/Windows-Fundamentals-module.png">
+                <div class = "banner-text" style="padding-left: 40px;">
+                    <h1>Windows Fundamentals 2</h1>
+                    <p>In part 2 of the Windows Fundamentals module, discover more about System Configuration, UAC Settings, Resource Monitoring, the Windows Registry and more..</p>
+                </div>
+            </div>
+        </div>
+        <div class = "content">
+            <div class="tasks">
+                <div class="task">
+                    <div class="task-header task-header-correct-answer">
+                        <div class="task-left">
+                            <h4>Task 1</h4>
+                            <i class="fa-solid fa-circle-check icon-correct-answer"></i>
+                            <p>Introduction</p>
+                        </div>
+                    </div>
+                    <div class="task-content">
+                        <div class="task-text">
+                            <p>We will continue our journey exploring the Windows operating system.</p><br>
+
+                            <p>In Windows Fundamentals 1, we covered the desktop, the file system, user account control, the control panel, settings, and the task manager.</p><br>
+
+                            <p>This module will attempt to provide an overview of some other utilities available within the Windows operating system and different methods to access these utilities.</p><br>
+
+                            <p>Launch the attached virtual machine. If you wish to access the virtual machine via Remote Desktop, use the credentials below.</p><br>
+
+                            <p>Machine IP: MACHINE_IP</p><br>
+
+                            <p>User: administrator</p><br>
+
+                            <p>Password: letmein123!</p><br>
+
+                            <p>Accept the Certificate when prompted, and you should be logged into the remote system now.</p><br>
+
+                            <p>Note: The virtual machine may take up to 3 minutes to load.</p><br>
+                        </div>
+                        <div class="task-question">
+                            <div class="question-title">
+                                <h1>Answer The Question Below</h1>
+                                <hr>
+                            </div>
+                            <div class="task-text">
+                                <p>Read above and start the virtual machine.</p>
+                            </div>
+                            <form class="question-submition" onsubmit="showCorrectAnswer(event)">
+                                <input class="input" type="text" placeholder="Answer">
+                                <input class="button" type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="task">
+                    <div class="task-header task-header-correct-answer">
+                        <div class="task-left">
+                            <h4>Task 2</h4>
+                            <i class="fa-solid fa-circle-check icon-correct-answer"></i>
+                            <p>System Configuration</p>
+                        </div>
+                    </div>
+                    <div class="task-content">
+                        <div class="task-text">
+                            <p>The System Configuration utility (MSConfig) is for advanced troubleshooting, and its main purpose is to help diagnose startup issues.</p><br>
+
+                            <p>Reference the following document <a href="document_link">here</a> for more information on the System Configuration utility.</p><br>
+
+                            <p>There are several methods to launch System Configuration. One method is from the Start Menu.</p><br>
+
+                            <p>Note: You need local administrator rights to open this utility.</p><br>
+
+                            <p>The utility has five tabs across the top. Below are the names for each tab. We will briefly cover each tab in this task.</p><br>
+
+                            <ul style="padding: 20px 0 0 55px;">
+                            <li>General</li><br>
+                            <li>Boot</li><br>
+                            <li>Services</li><br>
+                            <li>Startup</li><br>
+                            <li>Tools</li><br>
+                            </ul>
+
+                            <p>In the General tab, we can select what devices and services for Windows to load upon boot. The options are: Normal, Diagnostic, or Selective.</p><br>
+
+                            <p>In the Boot tab, we can define various boot options for the Operating System.</p><br>
+
+                            <p>The Services tab lists all services configured for the system regardless of their state (running or stopped). A service is a special type of application that runs in the background.</p><br>
+
+                            <p>In the Startup tab, you won't see anything interesting in the attached VM. Below is a screenshot of the Startup tab for MSConfig from my local machine.</p><br>
+
+                            <p>As you can see, Microsoft advises using Task Manager (taskmgr) to manage (enable/disable) startup items. The System Configuration utility is NOT a startup management program.</p><br>
+
+                            <p>Note: If you open Task Manager for the attached VM, you will notice that Task Manager doesn't show a Startup tab.</p><br>
+
+                            <p>There is a list of various utilities (tools) in the Tools tab that we can run to configure the operating system further. There is a brief description of each tool to provide some insight into what the tool is for.</p><br>
+
+                            <p>Notice the Selected command section. The information in this textbox will change per tool.</p><br>
+
+                            <p>To run a tool, we can use the command to launch the tool via the run prompt, command prompt, or by clicking the Launch button</p><br>
+                        </div>
+                        <div class="task-question">
+                            <div class="question-title">
+                                <h1>Answer The Question Below</h1>
+                                <hr>
+                            </div>
+                            <div class="task-text">
+                                <p>What is the name of the service that lists Systems Internals as the manufacturer?</p>
+                            </div>
+                            <form class="question-submition" onsubmit="showCorrectAnswer(event)">
+                                <input class="input" type="text" placeholder="Answer">
+                                <input class="button" type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="task">
+                    <div class="task-header task-header-correct-answer">
+                        <div class="task-left">
+                            <h4>Task 3</h4>
+                            <i class="fa-solid fa-circle-check icon-correct-answer"></i>
+                            <p>Change UAC Settings</p>
+                        </div>
+                    </div>
+                    <div class="task-content">
+                        <div class="task-text">
+                            <p>We're continuing with Tools that are available through the System Configuration panel.</p><br>
+
+                            <p>User Account Control (UAC) was covered in great detail in Windows Fundamentals 1.</p><br>
+                            
+                            <p>The UAC settings can be changed or even turned off entirely (not recommended).</p><br>
+                            
+                            <p>You can move the slider to see how the setting will change the UAC settings and Microsoft's stance on the setting.</p><br>
+                        </div>
+                        <div class="task-question">
+                            <div class="question-title">
+                                <h1>Answer The Question Below</h1>
+                                <hr>
+                            </div>
+                            <div class="task-text">
+                                <p>What is the command to open User Account Control Settings? (The answer is the name of the .exe file, not the full path)</p>
+                            </div>
+                            <form class="question-submition" onsubmit="showCorrectAnswer(event)">
+                                <input class="input" type="text" placeholder="Answer">
+                                <input class="button" type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="task">
+                    <div class="task-header task-header-correct-answer">
+                        <div class="task-left">
+                            <h4>Task 4</h4>
+                            <i class="fa-solid fa-circle-check icon-correct-answer"></i>
+                            <p>Computer Management</p>
+                        </div>
+                    </div>
+                    <div class="task-content">
+                        <div class="task-text">
+                            <h2>We're continuing with Tools that are available through the System Configuration panel.</h2><br>
+
+                            <h2>The Computer Management (compmgmt) utility has three primary sections: System Tools, Storage, and Services and Applications.</h2><br>
+
+                            <h2>System Tools</h2><br>
+
+                            <p>Let's start with Task Scheduler. Per Microsoft, with Task Scheduler, we can create and manage common tasks that our computer will carry out automatically at the times we specify.</p><br>
+
+                            <p>A task can run an application, a script, etc., and tasks can be configured to run at any point. A task can run at log in or at log off. Tasks can also be configured to run on a specific schedule, for example, every five mins.</p><br>
+
+                            <p>To create a basic task, click on Create Basic Task under Actions (right pane).</p><br>
+
+                            <p>Next is Event Viewer.</p><br>
+
+                            <p>Event Viewer allows us to view events that have occurred on the computer. These records of events can be seen as an audit trail that can be used to understand the activity of the computer system. This information is often used to diagnose problems and investigate actions executed on the system.</p><br>
+
+                            <p>Event Viewer has three panes.
+                            The pane on the left provides a hierarchical tree listing of the event log providers. (as shown in the image above)
+                            The pane in the middle will display a general overview and summary of the events specific to a selected provider.
+                            The pane on the right is the actions pane.
+                            There are five types of events that can be logged. Below is a table from docs.microsoft.com providing a brief description for each.</p><br>
+
+                            <p>The standard logs are visible under Windows Logs. Below is a table from docs.microsoft.com providing a brief description for each.</p><br>
+
+                            <p>For more information about Event Viewer and Event Logs, please refer to the Windows Event Log room.</p><br>
+
+                            <p>Shared Folders is where you will see a complete list of shares and folders shared that others can connect to.</p><br>
+
+                            <p>In the above image, under Shares, are the default share of Windows, C$, and default remote administration shares created by Windows, such as ADMIN$.</p><br>
+
+                            <p>As with any object in Windows, you can right-click on a folder to view its properties, such as Permissions (who can access the shared resource).</p><br>
+
+                            <p>Under Sessions, you will see a list of users who are currently connected to the shares. In this VM, you won't see anybody connected to the shares.</p><br>
+
+                            <p>All the folders and/or files that the connected users access will list under Open Files.</p><br>
+
+                            <p>The Local Users and Groups section you should be familiar with from Windows Fundamentals 1 because it's lusrmgr.msc.</p><br>
+
+                            <p>In Performance, you'll see a utility called Performance Monitor (perfmon).</p><br>
+
+                            <p>Perfmon is used to view performance data either in real-time or from a log file. This utility is useful for troubleshooting performance issues on a computer system, whether local or remote.</p><br>
+
+                            <p>Device Manager allows us to view and configure the hardware, such as disabling any hardware attached to the computer.</p><br>
+
+                            <h2>Storage</h2><br>
+
+                            <p>Under Storage is Windows Server Backup and Disk Management. We'll only look at Disk Management in this room.</p><br>
+
+                            <p>Note: Since the virtual machine is a Windows Server operating system, there are utilities available that you will typically not see in Windows 10.</p><br>
+
+                            <p>Disk Management is a system utility in Windows that enables you to perform advanced storage tasks. Some tasks are:</p><br>
+
+                            <ul style="padding: 20px 0 0 55px;">
+                            <li>Set up a new drive</li>
+                            <li>Extend a partition</li>
+                            <li>Shrink a partition</li>
+                            <li>Assign or change a drive letter (ex. E:)</li>
+                            </ul><br>
+
+                            <h2>Services and Applications</h2><br>
+
+                            <p>Recall from the previous task; a service is a special type of application that runs in the background. Here you can do more than enable and disable a service, such as view the Properties for the service.</p><br>
+
+                            <p>WMI Control configures and controls the Windows Management Instrumentation (WMI) service.</p><br>
+
+                            <p>Per Wikipedia, "WMI allows scripting languages (such as VBScript or Windows PowerShell) to manage Microsoft Windows personal computers and servers, both locally and remotely. Microsoft also provides a command-line interface to WMI called Windows Management Instrumentation Command-line (WMIC)."</p><br>
+
+                            <p>Note: The WMIC tool is deprecated in Windows 10, version 21H1. Windows PowerShell supersedes this tool for WMI.</p><br>
+                        </div>
+                        <div class="task-question">
+                            <div class="question-title">
+                                <h1>Answer The Question Below</h1>
+                                <hr>
+                            </div>
+                            <div class="task-text">
+                                <p>What is the command to open Computer Management? (The answer is the name of the .msc file, not the full path)</p>
+                            </div>
+                            <form class="question-submition" onsubmit="showCorrectAnswer(event)">
+                                <input class="input" type="text" placeholder="Answer">
+                                <input class="button" type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="task">
+                    <div class="task-header task-header-correct-answer">
+                        <div class="task-left">
+                            <h4>Task 5</h4>
+                            <i class="fa-solid fa-circle-check icon-correct-answer"></i>
+                            <p>System Information</p>
+                        </div>
+                    </div>
+                    <div class="task-content">
+                        <div class="task-text">
+                            <h2>We're continuing with Tools that are available through the System Configuration panel.</h2><br>
+
+                            <p>What is the System Information (msinfo32) tool?</p><br>
+
+                            <p>Per Microsoft, "Windows includes a tool called Microsoft System Information (Msinfo32.exe). This tool gathers information about your computer and displays a comprehensive view of your hardware, system components, and software environment, which you can use to diagnose computer issues."</p><br>
+
+                            <p>The information in System Summary is divided into three sections:</p><br>
+
+                            <ul style="padding: 20px 0 0 55px;">
+                            <li>Hardware Resources</li>
+                            <li>Components</li>
+                            <li>Software Environment</li>
+                            </ul><br>
+
+                            <p>System Summary will display general technical specifications for the computer, such as processor brand and model.</p><br>
+
+                            <p>The information displayed in Hardware Resources is not for the average computer user. If you want to learn more about this section, refer to the official Microsoft page.</p><br>
+
+                            <p>Under Components, you can see specific information about the hardware devices installed on the computer. Some sections don't show any information, but some sections do, such as Display and Input.</p><br>
+
+                            <p>In the Software Environment section, you can see information about software baked into the operating system and software you have installed. Other details are visible in this section as well, such as the Environment Variables and Network Connections.</p><br>
+
+                            <p>Recall from the Windows Fundamentals 1 room (The Windows\System32 Folder task) where Environment Variables was briefly touched on.</p><br>
+
+                            <p>Per Microsoft, "Environment variables store information about the operating system environment. This information includes details such as the operating system path, the number of processors used by the operating system, and the location of temporary folders.</p><br>
+
+                            <p>The environment variables store data that is used by the operating system and other programs. For example, the WINDIR environment variable contains the location of the Windows installation directory. Programs can query the value of this variable to determine where Windows operating system files are located".</p><br>
+
+                            <p>Click on Environment Variables to see the assigned values for the virtual machine.</p><br>
+
+                            <p>Another method to view environment variables is Control Panel > System and Security > System > Advanced system settings > Environment Variables OR Settings > System > About > system info > Advanced system settings > Environment Variables.</p><br>
+
+                            <p>The detour is over. Let's redirect our attention back to msinfo32 and pick up where we left off.</p><br>
+
+                            <p>Towards the very bottom of this utility, there is a search bar. Please give it a go. Select Components and search for IP address.</p><br>
+                        </div>
+                        <div class="task-question">
+                            <div class="question-title">
+                                <h1>Answer The Question Below</h1>
+                                <hr>
+                            </div>
+                            <div class="task-text">
+                                <p>What is the command to open System Information? (The answer is the name of the .exe file, not the full path)</p>
+                            </div>
+                            <form class="question-submition" onsubmit="showCorrectAnswer(event)">
+                                <input class="input" type="text" placeholder="Answer">
+                                <input class="button" type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="task">
+                    <div class="task-header task-header-correct-answer">
+                        <div class="task-left">
+                            <h4>Task 6</h4>
+                            <i class="fa-solid fa-circle-check icon-correct-answer"></i>
+                            <p>Resource Monitor</p>
+                        </div>
+                    </div>
+                    <div class="task-content">
+                        <div class="task-text">
+                            <h2>We're continuing with Tools that are available through the System Configuration panel.</h2><br>
+
+                            <p>What is Resource Monitor (resmon)?</p><br>
+
+                            <p>Per Microsoft, "Resource Monitor displays per-process and aggregate CPU, memory, disk, and network usage information, in addition to providing details about which processes are using individual file handles and modules. Advanced filtering allows users to isolate the data related to one or more processes (either applications or services), start, stop, pause, and resume services, and close unresponsive applications from the user interface. It also includes a process analysis feature that can help identify deadlocked processes and file locking conflicts so that the user can attempt to resolve the conflict instead of closing an application and potentially losing data."</p><br>
+
+                            <p>As some of the other tools mentioned in this room, this utility is geared primarily to advanced users who need to perform advanced troubleshooting on the computer system.</p><br>
+
+                            <p>In the Overview tab, Resmon has four sections:</p><br>
+
+                            <ul style="padding: 20px 0 0 55px;">
+                            <li>CPU</li>
+                            <li>Disk</li>
+                            <li>Network</li>
+                            <li>Memory</li>
+                            </ul><br>
+
+                            <p>The same four sections have corresponding tabs across the top. See below.</p><br>
+
+                            <p>Note that each tab has additional information for each. An image is shown below for each tab.</p><br>
+
+                            <p><strong>CPU</strong></p><br>
+
+                            <p><strong>Memory</strong></p><br>
+
+                            <p><strong>Disk</strong></p><br>
+
+                            <p><strong>Network</strong></p><br>
+
+                            <p>Although not captured in any of the images above, Resource Monitor has a pane at the far right. This pane shows a graphical view in real-time for each section.</p><br>
+
+                            <p>Note: The information displayed in Resource Monitor will be different for you compared to the images above.</p><br>
+                        </div>
+                        <div class="task-question">
+                            <div class="question-title">
+                                <h1>Answer The Question Below</h1>
+                                <hr>
+                            </div>
+                            <div class="task-text">
+                                <p>What is the command to open Resource Monitor? (The answer is the name of the .exe file, not the full path)</p>
+                            </div>
+                            <form class="question-submition" onsubmit="showCorrectAnswer(event)">
+                                <input class="input" type="text" placeholder="Answer">
+                                <input class="button" type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="task">
+                    <div class="task-header task-header-correct-answer">
+                        <div class="task-left">
+                            <h4>Task 7</h4>
+                            <i class="fa-solid fa-circle-check icon-correct-answer"></i>
+                            <p>Command Prompt</p>
+                        </div>
+                    </div>
+                    <div class="task-content">
+                        <div class="task-text">
+                            <h2>We're continuing with Tools that are available through the System Configuration panel.</h2><br>
+
+                            <p>The command prompt (cmd) can seem daunting at first, but it's really not that bad once you understand how to interact with it.</p><br>
+
+                            <p>In early operating systems, the command line was the sole way to interact with the operating system.</p><br>
+
+                            <p>When the GUI (graphical user interface) was introduced, it allowed users to perform complex tasks with a few clicks of a button instead of entering commands in the command prompt.</p><br>
+
+                            <p>Even though the GUI is the primary way to interact with the operating system, a computer user can still interact via the command prompt.</p><br>
+
+                            <p>In this task, we'll only cover a few commands that a computer user can run in the command prompt to obtain information about the computer system.</p><br>
+
+                            <p>Let's start with a few simple commands, such as hostname and whoami.</p><br>
+
+                            <p>The command hostname will output the computer name.</p><br>
+
+                            <p>The command whoami will output the name of the logged-in user.</p><br>
+
+                            <p>Next, let's look at some commands that are useful when troubleshooting.</p><br>
+
+                            <p>A command used often is ipconfig. This command will show the network address settings for the computer.</p><br>
+
+                            <p>Each command will have a help manual to explain the expected syntax to execute the command properly, along with any additional parameters that can be added to the command to expand its execution.</p><br>
+
+                            <p>A  command to retrieve the help manual for a command is /?.</p><br>
+
+                            <p>For example, to see the help manual for ipconfig, you can use the following command: ipconfig /?</p><br>
+
+                            <p>Note: To clear the command prompt screen, the command is cls.</p><br>
+
+                            <p>The next command is netstat. Per the help manual, this command will display protocol statistics and current TCP/IP network connections.</p><br>
+
+                            <p>In the above image, the line within the red box shows us an example syntax for the command.</p><br>
+
+                            <p>The structure tells us the netstat command can be run alone or with parameters, such as -a,  -b,  -e, etc.</p><br>
+
+                            <p>When any of the parameters are appended to the root command, netstat in this case, the output changes. Play with a few to see for yourself.</p><br>
+
+                            <p>The net command is primarily used to manage network resources. This command supports sub-commands.</p><br>
+
+                            <p>If you type net without a sub-command, the output will show the syntax for the root command showing a few of the sub-commands you can use.</p><br>
+
+                            <p>For the net command, to display the help manual /? will not work. In this case, you need to use different syntax, which is net help.</p><br>
+
+                            <p>So, if you wish to see the help information for net user , the command is net help user.</p><br>
+
+                            <p>You can use the same command to view the help information for other useful net sub-commands, such as localgroup, use, share, and session.</p><br>
+
+                            <p>Refer to the following link to see a comprehensive list of commands you can execute in the command prompt <a href="https://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/ntcmds.mspx?mfr=true">here</a>.</p><br>
+                        </div>
+                        <div class="task-question">
+                            <div class="question-title">
+                                <h1>Answer The Question Below</h1>
+                                <hr>
+                            </div>
+                            <div class="task-text">
+                                <p>In System Configuration, what is the full command for Internet Protocol Configuration?</p>
+                            </div>
+                            <form class="question-submition" onsubmit="showCorrectAnswer(event)">
+                                <input class="input" type="text" placeholder="Answer">
+                                <input class="button" type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="task">
+                    <div class="task-header task-header-correct-answer">
+                        <div class="task-left">
+                            <h4>Task 8</h4>
+                            <i class="fa-solid fa-circle-check icon-correct-answer"></i>
+                            <p>Registry Editor</p>
+                        </div>
+                    </div>
+                    <div class="task-content">
+                        <div class="task-text">
+                            <h2>We're continuing with Tools that are available through the System Configuration panel.</h2><br>
+
+                            <p>The Windows Registry (per Microsoft) is a central hierarchical database used to store information necessary to configure the system for one or more users, applications, and hardware devices.</p><br>
+                            
+                            <p>The registry contains information that Windows continually references during operation, such as:</p><br>
+                            
+                            <ul style="padding: 20px 0 0 55px;">
+                              <li>Profiles for each user</li>
+                              <li>Applications installed on the computer and the types of documents that each can create</li>
+                              <li>Property sheet settings for folders and application icons</li>
+                              <li>What hardware exists on the system</li>
+                              <li>The ports that are being used.</li>
+                            </ul><br>
+                            
+                            <p>Warning: The registry is for advanced computer users. Making changes to the registry can affect normal computer operations.</p><br>
+                            
+                            <p>There are various ways to view/edit the registry. One way is to use the Registry Editor (regedit).</p><br>
+                            
+                            <p>Refer to the following Microsoft documentation <a href="https://docs.microsoft.com/en-us/windows/win32/sysinfo/windows-registry">here</a> to learn more about the Windows Registry.</p><br>                            
+                        </div>
+                        <div class="task-question">
+                            <div class="question-title">
+                                <h1>Answer The Question Below</h1>
+                                <hr>
+                            </div>
+                            <div class="task-text">
+                                <p>What is the command to open the Registry Editor? (The answer is the name of  the .exe file, not the full path)</p>
+                            </div>
+                            <form class="question-submition" onsubmit="showCorrectAnswer(event)">
+                                <input class="input" type="text" placeholder="Answer">
+                                <input class="button" type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="task">
+                    <div class="task-header task-header-correct-answer">
+                        <div class="task-left">
+                            <h4>Task 9</h4>
+                            <i class="fa-solid fa-circle-check icon-correct-answer"></i>
+                            <p>Conclusion</p>
+                        </div>
+                    </div>
+                    <div class="task-content">
+                        <div class="task-text">
+                            <h2>Recall that the tasks covered in this room were some of the tools that can launch from MSConfig.</h2><br>
+
+                            <p>Throughout the room, commands and shortcuts were shared for the utilities. This means you don't have to launch MSConfig to run these utilities.</p><br>
+
+                            <p>You can also run some of these utilities directly from the Start Menu. See below where some of these utilities can be found.</p><br>
+
+                            <ul style="padding: 20px 0 0 55px;">
+                            <li>Task Scheduler: Start Menu > Windows Administrative Tools > Task Scheduler</li>
+                            <li>Event Viewer: Start Menu > Windows Administrative Tools > Event Viewer</li>
+                            <li>Shared Folders: Start Menu > Windows Administrative Tools > Shared Folders</li>
+                            <li>Performance Monitor: Start Menu > Windows Administrative Tools > Performance Monitor</li>
+                            <li>Computer Management: Start Menu > Windows Administrative Tools > Computer Management</li>
+                            <li>System Information: Start Menu > Windows Administrative Tools > System Information</li>
+                            </ul><br>
+
+                            <p>Some of the tools listed in MSConfig that weren't mentioned in this room were either covered in Windows Fundamentals 1 or were left for you to explore on your own.</p><br>
+                        </div>
+                        <div class="task-question">
+                            <div class="question-title">
+                                <h1>Answer The Question Below</h1>
+                                <hr>
+                            </div>
+                            <div class="task-text">
+                                <p>Read above.</p>
+                            </div>
+                            <form class="question-submition" onsubmit="showCorrectAnswer(event)">
+                                <input class="input" type="text" placeholder="Answer">
+                                <input class="button" type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="main">
+                <div class="tag">
+                    <h1>Core Team</h1>
+                    <div class="social_link">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="copyright">
+                        <p>Copyright © 2024 <a href="#">Core</a> All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var headers = document.querySelectorAll('.task-header');
+        
+            headers.forEach(function(header) {
+                header.addEventListener('click', function() {
+                    // Find the current task's content
+                    var taskContent = this.nextElementSibling;
+        
+                    // Hide all task contents
+                    document.querySelectorAll('.task-content').forEach(function(content) {
+                        if (content !== taskContent) {
+                            content.style.display = 'none'; // Hide other task contents
+                        }
+                    });
+        
+                    // Toggle the visibility of the current task's content
+                    taskContent.style.display = taskContent.style.display === 'none' || taskContent.style.display === '' ? 'block' : 'none';
+                });
+            });
+        
+            document.querySelectorAll('.question-submition').forEach(function(form) {
+                form.addEventListener('submit', function(event) {
+                    event.preventDefault(); // Prevent the form from submitting normally
+                    
+                    var task = this.closest('.task');
+                    var icon = task.querySelector('.icon-correct-answer');
+                    var header = task.querySelector('.task-header-correct-answer');
+                    
+                    icon.style.display = 'block'; // Show the icon
+                    header.style.borderLeftColor = 'rgb(32, 199, 32)'; // Change the border color
+                });
+            });
+        });
+        </script>
+         <script>
+            const navBar = document.querySelector('nav');
+    
+            function toggleBlurOnScroll() {
+                if (window.scrollY > 50) {
+                    navBar.classList.add('blurred');
+                } else {
+                    navBar.classList.remove('blurred');
+                }
+            }
+    
+            window.addEventListener('scroll', toggleBlurOnScroll);
+        </script>
+        <script src="../../../javaScript/progress3.js"></script>
+</body>
+</html>

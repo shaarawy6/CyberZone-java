@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Websites Work</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../../../css/section-page.css">
+    <link rel="icon" href="../../../images/How_The_Web_Works_module.png" type="images/x-icon">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+    <script src="../../../javaScript/particles-config.js"></script>
+    <main class="container">
+        <nav>
+            <div class="all">
+                <div class="logo">
+                    <a href="../../../html/index.html"><h1><span>Cyber</span>zone</h1></a>
+                </div>
+                <div class="choice"> <!--choice for desktop-->
+                    <a href="../../../html/home.html">Home</a> <!--<i></i> tag "icon"-->
+                    <a href="../../../html/paths.html">Paths</a>
+                    <a href="../../../html/modules.html">Modules</a>
+                    <a href="../../../jsp/downloads.jsp">Downloads</a>
+                    <a href="https://cyberzone1.pythonanywhere.com/">Apps</a>
+                    <a href="../../../html/ubuntu.html">Ubuntu</i></a>
+                </div>
+                <div class="register">
+                    <a href="../../../html/sign-in.html" class="login"><button >Login</button></a>
+                    <a href="../../../html/sign-up.html" class="signup"><button >sign up</button></a>
+                </div>
+            </div>
+        </nav>
+        <div class="banner-container">
+            <div class="banner">
+                <img class = "banner-icon" src="../../../images/How_The_Web_Works_module.png">
+                <div class = "banner-text" style="padding-left: 40px;">
+                    <h1>How Websites Work</h1>
+                    <p>To exploit a website, you first need to know how they are created.</p>
+                </div>
+            </div>
+        </div>
+        <div class = "content">
+            <div class="tasks">
+                <div class="task">
+                    <div class="task-header task-header-correct-answer">
+                        <div class="task-left">
+                            <h4>Task 1</h4>
+                            <i class="fa-solid fa-circle-check icon-correct-answer"></i>
+                            <p>How websites work</p>
+                        </div>
+                    </div>
+                    <div class="task-content">
+                        <div class="task-text">
+                            <p>By the end of this room, you'll know how websites are created and will be introduced to some basic security issues.</p>
+
+                            <br>
+                            <p>When you visit a website, your browser (like Safari or Google Chrome) makes a request to a web server asking for information about the page you're visiting. It will respond with data that your browser uses to show you the page; a web server is just a dedicated computer somewhere else in the world that handles your requests.</p>
+
+                            <br>
+                            <p>There are two major components that make up a website:</p>
+
+                            <br>
+                            <ul style="padding: 20px 0 0 55px;">
+                            <li>Front End (Client-Side) - the way your browser renders a website.</li>
+                            <li>Back End (Server-Side) - a server that processes your request and returns a response.</li>
+                            </ul>
+
+                            <br>
+                            <p>There are many other processes involved in your browser making a request to a web server, but for now, you just need to understand that you make a request to a server, and it responds with data your browser uses to render information to you.</p>
+                        </div>
+                        <div class="task-question">
+                            <div class="question-title">
+                                <h1>Answer The Question Below</h1>
+                                <hr>
+                            </div>
+                            <div class="task-text">
+                                <p>What term best describes the component of a web application rendered by your browser?</p>
+                            </div>
+                            <form class="question-submition" onsubmit="showCorrectAnswer(event)">
+                                <input class="input" type="text" placeholder="Answer">
+                                <input class="button" type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="task">
+                    <div class="task-header task-header-correct-answer">
+                        <div class="task-left">
+                            <h4>Task 2</h4>
+                            <i class="fa-solid fa-circle-check icon-correct-answer"></i>
+                            <p>HTML</p>
+                        </div>
+                    </div>
+                    <div class="task-content">
+                        <div class="task-text">
+                            <p>Websites are primarily created using:</p>
+
+                            <ul style="padding: 20px 0 0 55px;">
+                            <li>HTML, to build websites and define their structure</li>
+                            <li>CSS, to make websites look pretty by adding styling options</li>
+                            <li>JavaScript, implement complex features on pages using interactivity</li>
+                            </ul>
+
+                            <br>
+                            <p>HyperText Markup Language (HTML) is the language websites are written in. Elements (also known as tags) are the building blocks of HTML pages and tell the browser how to display content.</p>
+
+                            <br>
+                            <p>The HTML structure (as shown in the screenshot) has the following components:</p>
+
+                            <ul style="padding: 20px 0 0 55px;">
+                            <li>The &lt;!DOCTYPE html&gt; defines that the page is a HTML5 document. This helps with standardisation across different browsers and tells the browser to use HTML5 to interpret the page.</li>
+                            <li>The &lt;html&gt; element is the root element of the HTML page - all other elements come after this element.</li>
+                            <li>The &lt;head&gt; element contains information about the page (such as the page title)</li>
+                            <li>The &lt;body&gt; element defines the HTML document's body; only content inside of the body is shown in the browser.</li>
+                            <li>The &lt;h1&gt; element defines a large heading</li>
+                            <li>The &lt;p&gt; element defines a paragraph</li>
+                            </ul>
+
+                            <br>
+                            <p>There are many other elements (tags) used for different purposes. For example, there are tags for buttons (&lt;button&gt;), images (&lt;img&gt;), lists, and much more.</p>
+
+                            <br>
+                            <p>Tags can contain attributes such as the class attribute which can be used to style an element (e.g. make the tag a different color) &lt;p class="bold-text"&gt;, or the src attribute which is used on images to specify the location of an image: &lt;img src="img/cat.jpg"&gt;. An element can have multiple attributes each with its own unique purpose, e.g., &lt;p attribute1="value1" attribute2="value2"&gt;.</p>
+
+                            <br>
+                            <p>Elements can also have an id attribute (&lt;p id="example"&gt;), which is unique to the element. Unlike the class attribute, where multiple elements can use the same class, an element must have different id's to identify them uniquely. Element id's are used for styling and to identify it by JavaScript.</p>
+
+                            <br>
+                            <p>You can view the HTML of any website by right-clicking and selecting "View Page Source" (Chrome) / "Show Page Source" (Safari).</p>
+                        </div>
+                        <div class="task-question">
+                            <div class="question-title">
+                                <h1>Answer The Question Below</h1>
+                                <hr>
+                            </div>
+                            <div class="task-text">
+                                <p>Let's play with some HTML! On the right-hand side, you should see a box that renders HTML - If you enter some HTML into the box and click the green "Render HTML Code" button, it will render your HTML on the page; you should see an image of some cats.</p>
+                            </div>
+                            <form class="question-submition" onsubmit="showCorrectAnswer(event)">
+                                <input class="input" type="text" placeholder="Answer">
+                                <input class="button" type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="task">
+                    <div class="task-header task-header-correct-answer">
+                        <div class="task-left">
+                            <h4>Task 3</h4>
+                            <i class="fa-solid fa-circle-check icon-correct-answer"></i>
+                            <p>JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="task-content">
+                        <div class="task-text">
+                            <p>JavaScript (JS) is one of the most popular coding languages in the world and allows pages to become interactive. HTML is used to create the website structure and content, while JavaScript is used to control the functionality of web pages - without JavaScript, a page would not have interactive elements and would always be static. JS can dynamically update the page in real-time, giving functionality to change the style of a button when a particular event on the page occurs (such as when a user clicks a button) or to display moving animations.</p>
+                            <br>
+                            <p>JavaScript is added within the page source code and can be either loaded within &lt;script&gt; tags or can be included remotely with the src attribute: &lt;script src="/location/of/javascript_file.js"&gt;&lt;/script&gt;</p>
+
+                            <br>
+                            <p>The following JavaScript code finds an HTML element on the page with the id of "demo" and changes the element's contents to "Hack the Planet":</p>
+                            <ul style="padding: 20px 0 0 55px;">
+                            <li>document.getElementById("demo").innerHTML = "Hack the Planet";</li>
+                            </ul>
+
+                            <br>
+                            <p>HTML elements can also have events, such as "onclick" or "onhover" that execute JavaScript when the event occurs. The following code changes the text of the element with the demo ID to Button Clicked:</p>
+                            <ul style="padding: 20px 0 0 55px;">
+                            <li>&lt;button onclick='document.getElementById("demo").innerHTML = "Button Clicked";'&gt;Click Me!&lt;/button&gt;</li>
+                            </ul>
+                            <br>
+                            <p>Onclick events can also be defined inside the JavaScript script tags, and not on elements directly.</p>
+                        </div>
+                        <div class="task-question">
+                            <div class="question-title">
+                                <h1>Answer The Question Below</h1>
+                                <hr>
+                            </div>
+                            <div class="task-text">
+                                <p>Click the "View Site" button on this task. On the right-hand side, add JavaScript that changes the demo element's content to "Hack the Planet"</p>
+                            </div>
+                            <form class="question-submition" onsubmit="showCorrectAnswer(event)">
+                                <input class="input" type="text" placeholder="Answer">
+                                <input class="button" type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="task">
+                    <div class="task-header task-header-correct-answer">
+                        <div class="task-left">
+                            <h4>Task 4</h4>
+                            <i class="fa-solid fa-circle-check icon-correct-answer"></i>
+                            <p>Sensitive Data Exposure</p>
+                        </div>
+                    </div>
+                    <div class="task-content">
+                        <div class="task-text">
+                            <p>Sensitive Data Exposure occurs when a website doesn't properly protect (or remove) sensitive clear-text information to the end-user; usually found in a site's frontend source code.</p><br>
+                            <p>We now know that websites are built using many HTML elements (tags), all of which we can see simply by "viewing the page source". A website developer may have forgotten to remove login credentials, hidden links to private parts of the website or other sensitive data shown in HTML or JavaScript.</p><br>
+                            <p>Sensitive information can be potentially leveraged to further an attacker's access within different parts of a web application. For example, there could be HTML comments with temporary login credentials, and if you viewed the page's source code and found this, you could use these credentials to log in elsewhere on the application (or worse, used to access other backend components of the site).</p><br>
+                            <p>Whenever you're assessing a web application for security issues, one of the first things you should do is review the page source code to see if you can find any exposed login credentials or hidden links.</p>
+                        </div>
+                        <div class="task-question">
+                            <div class="question-title">
+                                <h1>Answer The Question Below</h1>
+                                <hr>
+                            </div>
+                            <div class="task-text">
+                                <p>View the website on <a href="https://static-labs.tryhackme.cloud/sites/howwebsiteswork/html_data_exposure/">this link</a>. What is the password hidden in the source code?</p>
+                            </div>
+                            <form class="question-submition" onsubmit="showCorrectAnswer(event)">
+                                <input class="input" type="text" placeholder="Answer">
+                                <input class="button" type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="task">
+                    <div class="task-header task-header-correct-answer">
+                        <div class="task-left">
+                            <h4>Task 5</h4>
+                            <i class="fa-solid fa-circle-check icon-correct-answer"></i>
+                            <p>HTML Injection</p>
+                        </div>
+                    </div>
+                    <div class="task-content">
+                        <div class="task-text">
+                            <p>HTML Injection is a vulnerability that occurs when unfiltered user input is displayed on the page. If a website fails to sanitise user input (filter any "malicious" text that a user inputs into a website), and that input is used on the page, an attacker can inject HTML code into a vulnerable website.</p><br>
+                            <p>Input sanitisation is very important in keeping a website secure, as information a user inputs into a website is often used in other frontend and backend functionality. A vulnerability you'll explore in another lab is database injection, where you can manipulate a database lookup query to log in as another user by controlling the input that's directly used in the query - but for now, let's focus on HTML injection (which is client-side).</p><br>
+                            <p>When a user has control of how their input is displayed, they can submit HTML (or JavaScript) code, and the browser will use it on the page, allowing the user to control the page's appearance and functionality.</p><br><br>
+                            <p>The image above shows how a form outputs text to the page. Whatever the user inputs into the "What's your name" field is passed to a JavaScript function and output to the page, which means if the user adds their own HTML or JavaScript in the field, it's used in the sayHi function and is added to the page - this means you can add your own HTML (such as a h1 tag) and it will output your input as pure HTML.</p><br>
+                            <p>The general rule is never to trust user input. To prevent malicious input, the website developer should sanitise everything the user enters before using it in the JavaScript function; in this case, the developer could remove any HTML tags.</p>
+                        </div>
+                        <div class="task-question">
+                            <div class="question-title">
+                                <h1>Answer The Question Below</h1>
+                                <hr>
+                            </div>
+                            <div class="task-text">
+                                <p>View the website on this task and inject HTML so that a malicious link to http://hacker.com is shown.</p>
+                            </div>
+                            <form class="question-submition" onsubmit="showCorrectAnswer(event)">
+                                <input class="input" type="text" placeholder="Answer">
+                                <input class="button" type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="main">
+                <div class="tag">
+                    <h1>Core Team</h1>
+                    <div class="social_link">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="copyright">
+                        <p>Copyright © 2024 <a href="#">Core</a> All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var headers = document.querySelectorAll('.task-header');
+        
+            headers.forEach(function(header) {
+                header.addEventListener('click', function() {
+                    // Find the current task's content
+                    var taskContent = this.nextElementSibling;
+        
+                    // Hide all task contents
+                    document.querySelectorAll('.task-content').forEach(function(content) {
+                        if (content !== taskContent) {
+                            content.style.display = 'none'; // Hide other task contents
+                        }
+                    });
+        
+                    // Toggle the visibility of the current task's content
+                    taskContent.style.display = taskContent.style.display === 'none' || taskContent.style.display === '' ? 'block' : 'none';
+                });
+            });
+        
+            document.querySelectorAll('.question-submition').forEach(function(form) {
+                form.addEventListener('submit', function(event) {
+                    event.preventDefault(); // Prevent the form from submitting normally
+                    
+                    var task = this.closest('.task');
+                    var icon = task.querySelector('.icon-correct-answer');
+                    var header = task.querySelector('.task-header-correct-answer');
+                    
+                    icon.style.display = 'block'; // Show the icon
+                    header.style.borderLeftColor = 'rgb(32, 199, 32)'; // Change the border color
+                });
+            });
+        });
+        </script>
+         <script>
+            const navBar = document.querySelector('nav');
+    
+            function toggleBlurOnScroll() {
+                if (window.scrollY > 50) {
+                    navBar.classList.add('blurred');
+                } else {
+                    navBar.classList.remove('blurred');
+                }
+            }
+    
+            window.addEventListener('scroll', toggleBlurOnScroll);
+        </script>
+        <script src="../../../javaScript/progress3.js"></script>
+</body>
+</html>

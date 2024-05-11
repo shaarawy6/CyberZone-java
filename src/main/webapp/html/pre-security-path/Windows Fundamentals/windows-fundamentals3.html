@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows Fundamentals 3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../../../css/section-page.css">
+    <link rel="icon" href="../../../images/Windows-Fundamentals-module.png" type="images/x-icon">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+    <script src="../../../javaScript/particles-config.js"></script>
+    <main class="container">
+        <nav>
+            <div class="all">
+                <div class="logo">
+                    <a href="../../../html/index.html"><h1><span>Cyber</span>zone</h1></a>
+                </div>
+                <div class="choice"> <!--choice for desktop-->
+                    <a href="../../../html/home.html">Home</a> <!--<i></i> tag "icon"-->
+                    <a href="../../../html/paths.html">Paths</a>
+                    <a href="../../../html/modules.html">Modules</a>
+                    <a href="../../../jsp/downloads.jsp">Downloads</a>
+                    <a href="https://cyberzone1.pythonanywhere.com/">Apps</a>
+                    <a href="../../../html/ubuntu.html">Ubuntu</i></a>
+                </div>
+                <div class="register">
+                    <a href="../../../html/sign-in.html" class="login"><button >Login</button></a>
+                    <a href="../../../html/sign-up.html" class="signup"><button >sign up</button></a>
+                </div>
+            </div>
+        </nav>
+        <div class="banner-container">
+            <div class="banner">
+                <img class = "banner-icon" src="../../../images/Windows-Fundamentals-module.png">
+                <div class = "banner-text" style="padding-left: 40px;">
+                    <h1>Windows Fundamentals 3</h1>
+                    <p>In part 3 of the Windows Fundamentals module, learn about the built-in Microsoft tools that help keep the device secure, such as Windows Updates, Windows Security, BitLocker, and more...</p>
+                </div>
+            </div>
+        </div>
+        <div class = "content">
+            <div class="tasks">
+                <div class="task">
+                    <div class="task-header task-header-correct-answer">
+                        <div class="task-left">
+                            <h4>Task 1</h4>
+                            <i class="fa-solid fa-circle-check icon-correct-answer"></i>
+                            <p>Introduction</p>
+                        </div>
+                    </div>
+                    <div class="task-content">
+                        <div class="task-text">
+                            <h2>We will continue our journey exploring the Windows operating system.</h2><br>
+
+                            <p>To summarize the previous two rooms:</p><br>
+
+                            <ul style="padding: 20px 0 0 55px;">
+                            <li>In Windows Fundamentals 1, we covered the desktop, the file system, user account control, the control panel, settings, and the task manager.</li>
+                            <li>In Windows Fundamentals 2, we covered various utilities, such as System Configuration, Computer Management, Resource Monitor, etc.</li>
+                            </ul><br>
+
+                            <p>This module will attempt to provide an overview of the security features within the Windows operating system.</p><br>
+
+                            <p>Launch the attached virtual machine. If you wish to access the virtual machine via Remote Desktop, use the credentials below.</p><br>
+
+                            <p><strong>Machine IP:</strong> MACHINE_IP</p>
+                            <p><strong>User:</strong> administrator</p>
+                            <p><strong>Password:</strong> letmein123!</p><br>
+
+                            <p>Accept the Certificate when prompted, and you should be logged into the remote system now.</p><br>
+
+                            <p><em>Note: The virtual machine may take up to 3 minutes to load.</em></p><br>
+                        </div>
+                        <div class="task-question">
+                            <div class="question-title">
+                                <h1>Answer The Question Below</h1>
+                                <hr>
+                            </div>
+                            <div class="task-text">
+                                <p>Read the above and start the virtual machine.</p>
+                            </div>
+                            <form class="question-submition" onsubmit="showCorrectAnswer(event)">
+                                <input class="input" type="text" placeholder="Answer">
+                                <input class="button" type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="task">
+                    <div class="task-header task-header-correct-answer">
+                        <div class="task-left">
+                            <h4>Task 2</h4>
+                            <i class="fa-solid fa-circle-check icon-correct-answer"></i>
+                            <p>Windows Updates</p>
+                        </div>
+                    </div>
+                    <div class="task-content">
+                        <div class="task-text">
+                            <h2>Let's start things off with Windows Update.</h2><br>
+
+                            <p>Windows Update is a service provided by Microsoft to provide security updates, feature enhancements, and patches for the Windows operating system and other Microsoft products, such as Microsoft Defender.</p><br>
+
+                            <p>Updates are typically released on the 2nd Tuesday of each month. This day is called Patch Tuesday. That doesn't necessarily mean that a critical update/patch has to wait for the next Patch Tuesday to be released. If the update is urgent, then Microsoft will push the update via the Windows Update service to the Windows devices.</p><br>
+
+                            <p>Refer to the following link to see the Microsoft Security Update Guide <a href="#">here</a>.</p><br>
+
+                            <p>Windows Update is located in Settings. See below.</p><br>
+
+                            <p><strong>Tip:</strong> Another way to access Windows Update is from the Run dialog box, or CMD, by running the command <code>control /name Microsoft.WindowsUpdate</code>.</p><br>
+
+                            <p>In the attached VM, there are a few things to highlight.</p><br>
+
+                            <ul style="padding: 20px 0 0 55px;">
+                            <li>The Windows Update settings are 'managed'. (Typically, home users will not see this type of message)</li>
+                            <li>There are no available updates available for the virtual machine. (The attached virtual machine does not have Internet access to communicate with Microsoft to obtain new updates)</li>
+                            </ul><br>
+
+                            <p>Throughout the years, Windows users have grown accustomed to pushing Windows Updates off to a later date or not installing the updates at all. Various reasons caused this action, one being the fact that a reboot is typically required after a Windows update.</p><br>
+
+                            <p>Microsoft notably addressed this issue with Windows 10. The updates can no longer be ignored or pushed to the side until forgotten. Windows updates can only be postponed, but eventually, the update will happen, and your computer will reboot. Microsoft provides these updates to keep the device safe and secure.</p><br>
+
+                            <p>Below is an image showing how a Restart required looks and the several options available regarding scheduling the restart.</p><br>
+
+                            <p>Refer to the Windows Updates FAQ for more information.</p><br>
+                        </div>
+                        <div class="task-question">
+                            <div class="question-title">
+                                <h1>Answer The Question Below</h1>
+                                <hr>
+                            </div>
+                            <div class="task-text">
+                                <p>There were two definition updates installed in the attached VM. On what date were these updates installed?</p>
+                            </div>
+                            <form class="question-submition" onsubmit="showCorrectAnswer(event)">
+                                <input class="input" type="text" placeholder="Answer">
+                                <input class="button" type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="task">
+                    <div class="task-header task-header-correct-answer">
+                        <div class="task-left">
+                            <h4>Task 3</h4>
+                            <i class="fa-solid fa-circle-check icon-correct-answer"></i>
+                            <p>Windows Security</p>
+                        </div>
+                    </div>
+                    <div class="task-content">
+                        <div class="task-text">
+                            <h2>Per Microsoft, "Windows Security is your home to manage the tools that protect your device and your data".</h2><br>
+
+                            <p>In case you missed it, Windows Security is also available in Settings.</p><br>
+
+                            <p>In the above image, focus your attention on Protection areas.</p><br>
+
+                            <ul style="padding: 20px 0 0 55px;">
+                            <li>Virus & threat protection</li>
+                            <li>Firewall & network protection</li>
+                            <li>App & browser control</li>
+                            <li>Device security</li>
+                            </ul><br>
+
+                            <p>Each following task will briefly touch on these areas.</p><br>
+
+                            <p>Before proceeding, let's provide a quick comment on the status icons.</p><br>
+
+                            <ul style="padding: 20px 0 0 55px;">
+                            <li>Green means your device is sufficiently protected, and there aren't any recommended actions.</li>
+                            <li>Yellow means there is a safety recommendation for you to review.</li>
+                            <li>Red is a warning that something needs your immediate attention.</li>
+                            </ul><br>
+
+                            <p>Click on Open Windows Security.</p><br>
+
+                            <p><strong>Note:</strong> Since the attached VM is a Windows Server 2019 edition, it looks different from a Windows 10 Home or Professional edition.</p><br>
+
+                            <p>The below image is from a Windows 10 device.</p><br>
+
+                            <p>Next, we'll look at Virus & threat protection.</p><br>
+                        </div>
+                        <div class="task-question">
+                            <div class="question-title">
+                                <h1>Answer The Question Below</h1>
+                                <hr>
+                            </div>
+                            <div class="task-text">
+                                <p>In the above image, which area needs immediate attention?</p>
+                            </div>
+                            <form class="question-submition" onsubmit="showCorrectAnswer(event)">
+                                <input class="input" type="text" placeholder="Answer">
+                                <input class="button" type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="task">
+                    <div class="task-header task-header-correct-answer">
+                        <div class="task-left">
+                            <h4>Task 4</h4>
+                            <i class="fa-solid fa-circle-check icon-correct-answer"></i>
+                            <p>Virus & threat protection</p>
+                        </div>
+                    </div>
+                    <div class="task-content">
+                        <div class="task-text">
+                            <h2>Virus & Threat Protection</h2><br>
+
+                            <p>Virus & threat protection is divided into two parts:</p><br>
+
+                            <h3>Current Threats</h3><br>
+
+                            <ul style="padding: 20px 0 0 55px;">
+                            <li><strong>Scan options:</strong>
+                                <ul style="padding: 20px 0 0 55px;">
+                                <li>Quick scan - Checks folders in your system where threats are commonly found.</li>
+                                <li>Full scan - Checks all files and running programs on your hard disk. This scan could take longer than one hour.</li>
+                                <li>Custom scan - Choose which files and locations you want to check.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Threat history:</strong>
+                                <ul style="padding: 20px 0 0 55px;">
+                                <li>Last scan - Windows Defender Antivirus automatically scans your device for viruses and other threats to help keep it safe.</li>
+                                <li>Quarantined threats - Quarantined threats have been isolated and prevented from running on your device. They will be periodically removed.</li>
+                                <li>Allowed threats - Allowed threats are items identified as threats, which you allowed to run on your device. <br><strong>Warning:</strong> Allow an item to run that has been identified as a threat only if you are 100% sure of what you are doing.</li>
+                                </ul>
+                            </li>
+                            </ul><br>
+
+                            <h3>Virus & Threat Protection Settings</h3><br>
+
+                            <ul style="padding: 20px 0 0 55px;">
+                            <li><strong>Manage settings:</strong>
+                                <ul style="padding: 20px 0 0 55px;">
+                                <li>Real-time protection - Locates and stops malware from installing or running on your device.</li>
+                                <li>Cloud-delivered protection - Provides increased and faster protection with access to the latest protection data in the cloud.</li>
+                                <li>Automatic sample submission - Send sample files to Microsoft to help protect you and others from potential threats.</li>
+                                <li>Controlled folder access - Protect files, folders, and memory areas on your device from unauthorized changes by unfriendly applications.</li>
+                                <li>Exclusions - Windows Defender Antivirus won't scan items that you've excluded. <br><strong>Warning:</strong> Excluded items could contain threats that make your device vulnerable. Only use this option if you are 100% sure of what you are doing.</li>
+                                <li>Notifications - Windows Defender Antivirus will send notifications with critical information about the health and security of your device.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Virus & threat protection updates:</strong>
+                                <ul style="padding: 20px 0 0 55px;">
+                                <li>Check for updates - Manually check for updates to update Windows Defender Antivirus definitions.</li>
+                                <li>Ransomware protection - Controlled folder access - Ransomware protection requires this feature to be enabled, which in turn requires Real-time protection to be enabled. <br><strong>Note:</strong> Real-time protection is turned off in the attached VM to decrease the chances of performance issues. Since the VM can't reach the Internet and there aren't any threats in the VM, this is safe to do. Real-time protection should definitely be enabled in your personal Windows devices unless you have a 3rd party product that provides the same protection. Ensure it's always up-to-date and enabled.</li>
+                                </ul>
+                            </li>
+                            </ul><br>
+
+                            <p><strong>Tip:</strong> You can perform on-demand scans on any file/folder by right-clicking the item and selecting 'Scan with Microsoft Defender'.</p><br>
+
+                            <p>The below image was taken from another Windows device to show this feature.</p><br>
+                        </div>
+                        <div class="task-question">
+                            <div class="question-title">
+                                <h1>Answer The Question Below</h1>
+                                <hr>
+                            </div>
+                            <div class="task-text">
+                                <p>Specifically, what is turned off that Windows is notifying you to turn on?</p>
+                            </div>
+                            <form class="question-submition" onsubmit="showCorrectAnswer(event)">
+                                <input class="input" type="text" placeholder="Answer">
+                                <input class="button" type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="task">
+                    <div class="task-header task-header-correct-answer">
+                        <div class="task-left">
+                            <h4>Task 5</h4>
+                            <i class="fa-solid fa-circle-check icon-correct-answer"></i>
+                            <p>Firewall & network protection</p>
+                        </div>
+                    </div>
+                    <div class="task-content">
+                        <div class="task-text">
+                            <h2>Firewall & Network Protection</h2><br>
+
+                            <p><strong>What is a firewall?</strong></p>
+
+                            <p>Per Microsoft, "Traffic flows into and out of devices via what we call ports. A firewall is what controls what is - and more importantly isn't - allowed to pass through those ports. You can think of it like a security guard standing at the door, checking the ID of everything that tries to enter or exit".</p><br>
+
+                            <p><strong>Note:</strong> Each network may have different status icons for you.</p><br>
+
+                            <p><strong>What is the difference between the 3 (Domain, Private, and Public)?</strong></p>
+
+                            <p>Per Microsoft, "Windows Firewall offers three firewall profiles: domain, private and public".</p><br>
+
+                            <ul style="padding: 20px 0 0 55px;">
+                            <li><strong>Domain:</strong> The domain profile applies to networks where the host system can authenticate to a domain controller.</li>
+                            <li><strong>Private:</strong> The private profile is a user-assigned profile and is used to designate private or home networks.</li>
+                            <li><strong>Public:</strong> The default profile is the public profile, used to designate public networks such as Wi-Fi hotspots at coffee shops, airports, and other locations.</li>
+                            </ul><br>
+
+                            <p>If you click on any firewall profile, another screen will appear with two options: turn the firewall on/off and block all incoming connections.</p><br>
+
+                            <p><strong>Warning:</strong> Unless you are 100% confident in what you are doing, it is recommended that you leave your Windows Defender Firewall enabled.</p><br>
+
+                            <p><strong>Allow an app through firewall</strong></p><br>
+
+                            <p>You can view what the current settings for any firewall profile are. In the above image, several apps have access in the Private and/or Public firewall profile. Some of the apps will provide additional information if it's available via the Details button.</p><br>
+
+                            <p><strong>Advanced Settings</strong></p><br>
+
+                            <p>Configuring the Windows Defender Firewall is for advanced Windows users. Refer to the following Microsoft documentation on best practices <a href="https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-best-practices-and-requirements">here</a>.</p><br>
+
+                            <p><strong>Tip:</strong> Command to open the Windows Defender Firewall is WF.msc.</p><br>
+                        </div>
+                        <div class="task-question">
+                            <div class="question-title">
+                                <h1>Answer The Question Below</h1>
+                                <hr>
+                            </div>
+                            <div class="task-text">
+                                <p>If you were connected to airport Wi-Fi, what most likely will be the active firewall profile?</p>
+                            </div>
+                            <form class="question-submition" onsubmit="showCorrectAnswer(event)">
+                                <input class="input" type="text" placeholder="Answer">
+                                <input class="button" type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="task">
+                    <div class="task-header task-header-correct-answer">
+                        <div class="task-left">
+                            <h4>Task 6</h4>
+                            <i class="fa-solid fa-circle-check icon-correct-answer"></i>
+                            <p>App & browser control</p>
+                        </div>
+                    </div>
+                    <div class="task-content">
+                        <div class="task-text">
+                            <h2>Microsoft Defender SmartScreen</h2><br>
+
+                            <p>In this section, you can change the settings for the Microsoft Defender SmartScreen.</p><br>
+
+                            <p>Per Microsoft, "Microsoft Defender SmartScreen protects against phishing or malware websites and applications, and the downloading of potentially malicious files".</p><br>
+
+                            <p>Refer to the official Microsoft document for more information on Microsoft Defender SmartScreen <a href="https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/smartscreen-microsoft-defender-smartscreen?view=o365-worldwide">here</a>.</p><br>
+
+                            <p><strong>Check apps and files</strong></p>
+
+                            <p>Windows Defender SmartScreen helps protect your device by checking for unrecognized apps and files from the web.</p><br>
+
+                            <p><strong>Exploit protection</strong></p>
+
+                            <p>Exploit protection is built into Windows 10 (and, in our case, Windows Server 2019) to help protect your device against attacks.</p><br>
+
+                            <p><strong>Warning:</strong> Unless you are 100% confident in what you are doing, it is recommended that you leave the default settings.</p><br>
+                        </div>
+                        <div class="task-question">
+                            <div class="question-title">
+                                <h1>Answer The Question Below</h1>
+                                <hr>
+                            </div>
+                            <div class="task-text">
+                                <p>Read the above.</p>
+                            </div>
+                            <form class="question-submition" onsubmit="showCorrectAnswer(event)">
+                                <input class="input" type="text" placeholder="Answer">
+                                <input class="button" type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="task">
+                    <div class="task-header task-header-correct-answer">
+                        <div class="task-left">
+                            <h4>Task 7</h4>
+                            <i class="fa-solid fa-circle-check icon-correct-answer"></i>
+                            <p>Device security</p>
+                        </div>
+                    </div>
+                    <div class="task-content">
+                        <div class="task-text">
+                            <h2>Core Isolation</h2><br>
+
+                            <p>Even though you'll probably never change any of these settings, for completion's sake, it will be covered briefly.</p><br>
+
+                            <p><strong>Memory Integrity</strong> - Prevents attacks from inserting malicious code into high-security processes.</p><br>
+
+                            <p><strong>Warning:</strong> Unless you are 100% confident in what you are doing, it is recommended that you leave the default settings.</p><br>
+
+                            <p>The below images are from another machine to show another security feature that should be available in a personal Windows 10 device.</p><br>
+
+                            <p><strong>Security Processor</strong></p><br>
+
+                            <p>Below are the Security processor details.</p><br>
+
+                            <p><strong>What is the Trusted Platform Module (TPM)?</strong></p><br>
+
+                            <p>Per Microsoft, "Trusted Platform Module (TPM) technology is designed to provide hardware-based, security-related functions. A TPM chip is a secure crypto-processor that is designed to carry out cryptographic operations. The chip includes multiple physical security mechanisms to make it tamper-resistant, and malicious software is unable to tamper with the security functions of the TPM".</p><br>
+                        </div>
+                        <div class="task-question">
+                            <div class="question-title">
+                                <h1>Answer The Question Below</h1>
+                                <hr>
+                            </div>
+                            <div class="task-text">
+                                <p>What is the TPM?</p>
+                            </div>
+                            <form class="question-submition" onsubmit="showCorrectAnswer(event)">
+                                <input class="input" type="text" placeholder="Answer">
+                                <input class="button" type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="task">
+                    <div class="task-header task-header-correct-answer">
+                        <div class="task-left">
+                            <h4>Task 8</h4>
+                            <i class="fa-solid fa-circle-check icon-correct-answer"></i>
+                            <p>BitLocker</p>
+                        </div>
+                    </div>
+                    <div class="task-content">
+                        <div class="task-text">
+                            <h2>BitLocker</h2><br>
+
+                            <p>What is BitLocker?</p><br>
+
+                            <p>Per Microsoft, "BitLocker Drive Encryption is a data protection feature that integrates with the operating system and addresses the threats of data theft or exposure from lost, stolen, or inappropriately decommissioned computers".</p><br>
+
+                            <p>On devices with TPM installed, BitLocker offers the best protection.</p><br>
+
+                            <p>Per Microsoft, "BitLocker provides the most protection when used with a Trusted Platform Module (TPM) version 1.2 or later. The TPM is a hardware component installed in many newer computers by the computer manufacturers. It works with BitLocker to help protect user data and to ensure that a computer has not been tampered with while the system was offline".</p><br>
+
+                            <p>Refer to the official Microsoft documentation to learn more about BitLocker <a href="https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-overview">here</a>.</p><br>
+
+                            <p>Note: The BitLocker feature is not included in the attached VM.</p><br>
+                        </div>
+                        <div class="task-question">
+                            <div class="question-title">
+                                <h1>Answer The Question Below</h1>
+                                <hr>
+                            </div>
+                            <div class="task-text">
+                                <p>What must a user insert on computers that DO NOT have a TPM version 1.2 or later?</p>
+                            </div>
+                            <form class="question-submition" onsubmit="showCorrectAnswer(event)">
+                                <input class="input" type="text" placeholder="Answer">
+                                <input class="button" type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="task">
+                    <div class="task-header task-header-correct-answer">
+                        <div class="task-left">
+                            <h4>Task 9</h4>
+                            <i class="fa-solid fa-circle-check icon-correct-answer"></i>
+                            <p>Volume Shadow Copy Service</p>
+                        </div>
+                    </div>
+                    <div class="task-content">
+                        <div class="task-text">
+                            <h2>Volume Shadow Copy Service (VSS)</h2><br>
+
+                            <p>Per Microsoft, the Volume Shadow Copy Service (VSS) coordinates the required actions to create a consistent shadow copy (also known as a snapshot or a point-in-time copy) of the data that is to be backed up.</p><br>
+
+                            <p>Volume Shadow Copies are stored on the System Volume Information folder on each drive that has protection enabled.</p><br>
+
+                            <p>If VSS is enabled (System Protection turned on), you can perform the following tasks from within advanced system settings.</p><br>
+
+                            <ul style="padding: 20px 0 0 55px;">
+                                <li>Create a restore point</li>
+                                <li>Perform system restore</li>
+                                <li>Configure restore settings</li>
+                                <li>Delete restore points</li>
+                            </ul><br>
+
+                            <p>From a security perspective, malware writers know of this Windows feature and write code in their malware to look for these files and delete them. Doing so makes it impossible to recover from a ransomware attack unless you have an offline/off-site backup.</p><br>
+                        </div>
+                        <div class="task-question">
+                            <div class="question-title">
+                                <h1>Answer The Question Below</h1>
+                                <hr>
+                            </div>
+                            <div class="task-text">
+                                <p>What is VSS?</p>
+                            </div>
+                            <form class="question-submition" onsubmit="showCorrectAnswer(event)">
+                                <input class="input" type="text" placeholder="Answer">
+                                <input class="button" type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="task">
+                    <div class="task-header task-header-correct-answer">
+                        <div class="task-left">
+                            <h4>Task 10</h4>
+                            <i class="fa-solid fa-circle-check icon-correct-answer"></i>
+                            <p>Conclusion</p>
+                        </div>
+                    </div>
+                    <div class="task-content">
+                        <div class="task-text">
+                            <h2>Further Reading Material</h2><br>
+
+                            <p>In this room, we covered several built-in Windows security tools that ship with the Windows OS to help keep the device protected.</p><br>
+
+                            <p>There is still so much to explain and cover regarding the Windows OS. As mentioned in the Windows Fundamentals 1 room, "The content is aimed at those who wish to understand and use the Windows OS on a more comfortable level."</p><br>
+
+                            <p>To learn more about the Windows OS, you'll need to continue the journey on your own.</p><br>
+
+                            <h3>Further reading material:</h3><br>
+
+                            <ul style="padding: 20px 0 0 55px;">
+                                <li>Antimalware Scan Interface</li>
+                                <li>Credential Guard</li>
+                                <li>Windows 10 Hello</li>
+                                <li><a href="https://www.csoonline.com/article/3326880/the-best-new-windows-10-security-features.html">CSO Online - The best new Windows 10 security features</a></li>
+                            </ul><br>
+
+                            <p>Note: Attackers use built-in Windows tools and utilities in an attempt to go undetected within the victim environment. This tactic is known as Living Off The Land. Refer to the following resource <a href="https://www.cybereason.com/labs-are-you-seeing-living-off-the-land-attacks">here</a> to learn more about this.</p><br>
+                        </div>
+                        <div class="task-question">
+                            <div class="question-title">
+                                <h1>Answer The Question Below</h1>
+                                <hr>
+                            </div>
+                            <div class="task-text">
+                                <p>Read the above.</p>
+                            </div>
+                            <form class="question-submition" onsubmit="showCorrectAnswer(event)">
+                                <input class="input" type="text" placeholder="Answer">
+                                <input class="button" type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="main">
+                <div class="tag">
+                    <h1>Core Team</h1>
+                    <div class="social_link">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="copyright">
+                        <p>Copyright © 2024 <a href="#">Core</a> All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var headers = document.querySelectorAll('.task-header');
+        
+            headers.forEach(function(header) {
+                header.addEventListener('click', function() {
+                    // Find the current task's content
+                    var taskContent = this.nextElementSibling;
+        
+                    // Hide all task contents
+                    document.querySelectorAll('.task-content').forEach(function(content) {
+                        if (content !== taskContent) {
+                            content.style.display = 'none'; // Hide other task contents
+                        }
+                    });
+        
+                    // Toggle the visibility of the current task's content
+                    taskContent.style.display = taskContent.style.display === 'none' || taskContent.style.display === '' ? 'block' : 'none';
+                });
+            });
+        
+            document.querySelectorAll('.question-submition').forEach(function(form) {
+                form.addEventListener('submit', function(event) {
+                    event.preventDefault(); // Prevent the form from submitting normally
+                    
+                    var task = this.closest('.task');
+                    var icon = task.querySelector('.icon-correct-answer');
+                    var header = task.querySelector('.task-header-correct-answer');
+                    
+                    icon.style.display = 'block'; // Show the icon
+                    header.style.borderLeftColor = 'rgb(32, 199, 32)'; // Change the border color
+                });
+            });
+        });
+        </script>
+         <script>
+            const navBar = document.querySelector('nav');
+    
+            function toggleBlurOnScroll() {
+                if (window.scrollY > 50) {
+                    navBar.classList.add('blurred');
+                } else {
+                    navBar.classList.remove('blurred');
+                }
+            }
+    
+            window.addEventListener('scroll', toggleBlurOnScroll);
+        </script>
+        <script src="../../../javaScript/progress3.js"></script>
+</body>
+</html>

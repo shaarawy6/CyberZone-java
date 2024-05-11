@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Page</title> 
+    <!--link index.html file with style.css file-->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!--link for icons "home, user, path..."-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="icon" href="../images/Hacker.png" type="images/x-icon">
+    
+    <!--link index.html file with index.js file-->
+    <script src="../javaScript/script.js"></script>
+</head>
+<body>
+    <section> 
+        <div class="container">
+            <div class="hacker">
+                <img src="../images/Hacker.png" alt="Hacker">
+            </div>
+            <div class="bg-img">
+                <img src="../images/bg-img.png" alt="Background">
+            </div>
+        </div>
+
+        <nav>
+            <div class="logo">
+                <a href="../html/index.html" class="logo"><h1><span>Cyber</span>zone</h1></a>
+            </div>
+            <div class="choice"> <!--choice for desktop-->
+                <a href="../html/home.html">Home</a> <!--<i></i> tag "icon"-->
+                <a href="../html/paths.html">Paths</a>
+                <a href="../html/modules.html">Modules</a>
+                <a href="../jsp/downloads.jsp">Downloads</a>
+                <a href="https://cyberzone1.pythonanywhere.com/">Apps</a>
+                <a href="../html/ubuntu.html">Ubuntu</a>
+            </div>
+            <div class="register">
+                <a href="../html/sign-in.html" class="login"><button>Login</button></a>
+                <a href="../html/sign-up.html" class="signup"><button><strong>sign up</strong></button></a>
+            </div>
+        </nav>
+
+        <div class="main" id="Home">
+            <div class="main_content">
+                <div class="main_text">
+                    <h1 style="right: 94%">Empowering Skills <br>with <span>CyberZone</span></h1>
+                    <p style="right: 92%">
+                        Master CyberSecurity with CyberZone's interactive learning platform. Start your journey today!
+                    </p>
+                </div>
+            </div>
+            <div class="arrow">  <!--arrow icon-->
+                <a href="../html/home.html"><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="rounded-img">  <!--rounded text image-->
+                <img src="../images/rounded-text.png" alt="Rounded Text">
+            </div>
+        </div>
+    </section> 
+
+    <script>
+        const navBar = document.querySelector('nav');
+
+        function toggleBlurOnScroll() {
+            if (window.scrollY > 50) {
+                navBar.classList.add('blurred');
+            } else {
+                navBar.classList.remove('blurred');
+            }
+        }
+
+        window.addEventListener('scroll', toggleBlurOnScroll);
+    </script>
+
+    <!--the net-->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+    <script src="../javaScript/particles-config.js"></script>
+    
+    <script>
+        const arrowIcon = document.querySelector('.arrow a i');
+        const image = document.querySelector('.rounded-img img');
+
+        arrowIcon.addEventListener('mouseover', () => {
+            image.classList.add('rotate-image');
+        });
+
+        arrowIcon.addEventListener('mouseout', () => {
+            image.classList.remove('rotate-image');
+        });
+    </script>
+    <script src="../javaScript/progress.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

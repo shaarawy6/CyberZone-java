@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Application Security</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../../../css/section-page.css">
+    <link rel="icon" href="../../../images/Introduction-to-Offensive-Security-module2.png" type="images/x-icon">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+    <script src="../../../javaScript/particles-config.js"></script>
+    <main class="container">
+        <nav>
+            <div class="all">
+                <div class="logo">
+                    <a href="../../../html/index.html"><h1><span>Cyber</span>zone</h1></a>
+                </div>
+                <div class="choice"> <!--choice for desktop-->
+                    <a href="../../../html/home.html">Home</a> <!--<i></i> tag "icon"-->
+                    <a href="../../../html/paths.html">Paths</a>
+                    <a href="../../../html/modules.html">Modules</a>
+                    <a href="../../../jsp/downloads.jsp">Downloads</a>
+                    <a href="https://cyberzone1.pythonanywhere.com/">Apps</a>
+                    <a href="../../../html/ubuntu.html">Ubuntu</i></a>
+                </div>
+                <div class="register">
+                    <a href="../../../html/sign-in.html" class="login"><button >Login</button></a>
+                    <a href="../../../html/sign-up.html" class="signup"><button >sign up</button></a>
+                </div>
+            </div>
+        </nav>
+        <div class="banner-container">
+            <div class="banner">
+                <img class = "banner-icon" src="../../../images/Introduction-to-Offensive-Security-module2.png">
+                <div class = "banner-text">
+                    <h1>Web Application Security</h1>
+                    <p>Hack your first website (legally in a safe environment) 
+                        and experience an ethical hacker's job.Hack your first website (legally in a safe environment) 
+                        and experience an ethical hacker's job.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class = "content">
+            <div class="tasks">
+                <div class="task">
+                    <div class="task-header task-header-correct-answer">
+                        <div class="task-left">
+                            <h4>Task 1</h4>
+                            <i class="fa-solid fa-circle-check icon-correct-answer"></i>
+                            <p>Introduction</p>
+                        </div>
+                    </div>
+                    <div class="task-content">
+                        <div class="task-text">
+                            <h2>Every one of us uses different programs on our computers.</h2><br>
+                            <p>Generally speaking, programs run on our computers, using our computer’s processing power and storage. Moreover, to use a program, we need to install it first. What if we can use any program without installation?</p><br>
+
+                            <p>A web application is like a “program” that we can use without installation as long as we have a modern standard web browser, such as Firefox, Safari, or Chrome. Consequently, instead of installing every program you need, you only need to browse the related page. The following are some examples of web applications:</p><br>
+
+                            <ul style="padding: 20px 0 0 55px;">
+                                <li>Webmail such as Tutanota, Protonmail, Outlook, and Gmail</li>
+                                <li>Online office suites such as Microsoft Office 365 (Word, Excel, and PowerPoint), Google Drive (Docs, Sheets, and Slides), and Zoho Office (Writer, Sheet, and Show)</li>
+                                <li>Online shopping such as Amazon.com, AliExpress, and Etsy</li>
+                            </ul><br>
+
+                            <p>Thousands more examples provide a myriad of services. Other examples include online banking, money transfer, weather forecast, and social media.</p><br>
+
+                            <h2>Online Banking Web Application</h2><br>
+                            <p>The idea of a web application is that it is a program running on a remote server. A server refers to a computer system running continuously to “serve” the clients. In this case, the server will run a specific type of program that can be accessed by web browsers.</p><br>
+
+                            <p>Consider an online shopping application. The web application will read the data about the products and their details from a database server. A database is used to store information in an organized way. Examples include information about products, customers, and invoices. A database server is responsible for many functions, including reading, searching, and writing to the database. The online shopping web application might need more than one database to access, for example:</p><br>
+
+                            <ul style="padding: 20px 0 0 55px;">
+                                <li>Products database: This database contains details about the products, such as name, images, specifications, and price.</li>
+                                <li>Customers database: It contains all details related to customers, such as name, address, email, and phone number.</li>
+                                <li>Sales database: We expect to see what each customer has purchased and how they paid in this database.</li>
+                            </ul><br>
+
+                            <p>We can already see the amount of information stored in any online shopping system. Suppose an attacker manages to exploit (hack) the web application and steal the customers’ database. In that case, this will lead to a significant loss for the company and its customers.</p><br>
+
+                            <p>The image below shows searching for an item on an online shopping site. In the simplest version, the search will take four steps:</p><br>
+
+                            <ol style="padding: 20px 0 0 55px;">
+                                <li>The user enters an item name or related keywords in the search field. The web browser sends the search keyword(s) to the online shopping web application.</li>
+                                <li>The web application queries (searches) the products database for the submitted keywords.</li>
+                                <li>The product database returns the search results matching the provided keywords to the web application.</li>
+                                <li>The web application formats the results as a friendly web page and returns them to the user.</li>
+                            </ol><br>
+
+                            <p>From the user’s perspective, they will only access an elegant online shop where all the technical infrastructure is hidden.</p><br>
+
+                            <p>Many companies offer bug bounty programs. A bug bounty program allows the company to offer a reward for anyone who discovers a security vulnerability (weakness) in the company’s systems. The main condition is that the found vulnerability is within the bug bounty scope and rules. Among many others, Google, Microsoft, and Facebook have bug bounty programs. Discovering a bug can earn you from a few hundred USD to tens of thousands of USD, depending on the severity of the vulnerability, i.e., the weakness you discovered.</p><br>
+                        </div>
+                        <div class="task-question">
+                            <div class="question-title">
+                                <h1>Answer The Question Below</h1>
+                                <hr>
+                            </div>
+                            <div class="task-text">
+                                <p>What do you need to access a web application?</p>
+                            </div>
+                            <form class="question-submition" onsubmit="showCorrectAnswer(event)">
+                                <input class="input" type="text" placeholder="Answer">
+                                <input class="button" type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="task">
+                    <div class="task-header task-header-correct-answer">
+                        <div class="task-left">
+                            <h4>Task 2</h4>
+                            <i class="fa-solid fa-circle-check icon-correct-answer"></i>
+                            <p>Web Application Security Risks</p>
+                        </div>
+                    </div>
+                    <div class="task-content">
+                        <div class="task-text">
+                            <h2>There are a few main categories of common attacks against web applications.</h2><br>
+                            <p>Consider the following steps and related attacks:</p><br>
+
+                            <ol style="padding: 20px 0 0 55px;">
+                                <li>Log in at the website: The attacker can try to discover the password by trying many words. The attacker would use a long list of passwords with an automated tool to test them against the login page.</li>
+                                <li>Search for the product: The attacker can attempt to breach the system by adding specific characters and codes to the search term. The attacker’s objective is for the target system to return data it should not or execute a program it should not.</li>
+                                <li>Provide payment details: The attacker would check if the payment details are sent in cleartext or using weak encryption. Encryption refers to making the data unreadable without knowing the secret key or password.</li>
+                            </ol><br>
+
+                            <p>We cannot cover everything, but we will present a few formal categories from OWASP Top Ten. Don’t worry if these techniques sound alien to you; TryHackMe walks you through each vulnerability.</p><br>
+
+                            <h2>Identification and Authentication Failure</h2><br>
+                            <p>Identification refers to the ability to identify a user uniquely. In contrast, authentication refers to the ability to prove that the user is whom they claim to be. The online shop must confirm the user’s identity and authenticate them before they can use the system. However, this step is prone to different types of weaknesses. Example weaknesses include:</p><br>
+
+                            <ul style="padding: 20px 0 0 55px;">
+                                <li>Allowing the attacker to use brute force, i.e., try many passwords, usually using automated tools, to find valid login credentials.</li>
+                                <li>Allowing the user to choose a weak password. A weak password is usually easy to guess.</li>
+                                <li>Storing the users’ passwords in plain text. If the attacker manages to read the file containing the passwords, we don’t want them to be able to learn the stored password.</li>
+                            </ul><br>
+
+                            <p><strong>Broken Access Control</strong></p><br>
+                            <p>Access control ensures that each user can only access files (documents, images, etc.) related to their role or work. For example, you don’t want someone in the marketing department to access (read) the finance department’s documents. Example vulnerabilities related to access control include:</p><br>
+
+                            <ul style="padding: 20px 0 0 55px;">
+                                <li>Failing to apply the principle of the least privilege and giving users more access permissions than they need. For example, an online customer should be able to view the prices of the items, but they should not be able to change them.</li>
+                                <li>Being able to view or modify someone else’s account by using its unique identifier. For example, you don’t want one bank client to be able to view the transactions of another client.</li>
+                                <li>Being able to browse pages that require authentication (logging in) as an unauthenticated user. For example, we cannot let anyone view the webmail before logging in.</li>
+                            </ul><br>
+
+                            <p><strong>Injection</strong></p><br>
+                            <p>An injection attack refers to a vulnerability in the web application where the user can insert malicious code as part of their input. One cause of this vulnerability is the lack of proper validation and sanitization of the user’s input.</p><br>
+
+                            <p><strong>Cryptographic Failures</strong></p><br>
+                            <p>This category refers to the failures related to cryptography. Cryptography focuses on the processes of encryption and decryption of data. Encryption scrambles cleartext into ciphertext, which should be gibberish to anyone who does not have the secret key to decrypt it. In other words, encryption ensures that no one can read the data without knowing the secret key. Decryption converts the ciphertext back into the original cleartext using the secret key. Examples of cryptographic failures include:</p><br>
+
+                            <ul style="padding: 20px 0 0 55px;">
+                                <li>Sending sensitive data in clear text, for example, using HTTP instead of HTTPS. HTTP is the protocol used to access the web, while HTTPS is the secure version of HTTP. Others can read everything you send over HTTP, but not HTTPS.</li>
+                                <li>Relying on a weak cryptographic algorithm. One old cryptographic algorithm is to shift each letter by one. For instance, “TRY HACK ME” becomes “USZ IBDL NF.” This cryptographic algorithm is trivial to break.</li>
+                                <li>Using default or weak keys for cryptographic functions. It won’t be challenging to break the encryption that used 1234 as the secret key.</li>
+                            </ul><br>
+
+                            <p>Don’t worry if these techniques look challenging or sophisticated at first. TryHackMe has dedicated in-depth rooms to help you understand and experiment with the various attacks against web applications.</p><br>
+                        </div>
+                        <div class="task-question">
+                            <div class="question-title">
+                                <h1>Answer The Question Below</h1>
+                                <hr>
+                            </div>
+                            <div class="task-text">
+                                <p>You discovered that the login page allows an unlimited number of login attempts without trying to slow down the user or lock the account. What is the category of this security risk?</p>
+                            </div>
+                            <form class="question-submition" onsubmit="showCorrectAnswer(event)">
+                                <input class="input" type="text" placeholder="Answer">
+                                <input class="button" type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="task">
+                    <div class="task-header task-header-correct-answer">
+                        <div class="task-left">
+                            <h4>Task 3</h4>
+                            <i class="fa-solid fa-circle-check icon-correct-answer"></i>
+                            <p>Practical Example of Web Application Security</p>
+                        </div>
+                    </div>
+                    <div class="task-content">
+                        <div class="task-text">
+                            <h2>This task will investigate a vulnerable website that uses Insecure Direct Object References (IDOR).</h2><br>
+                            <p>IDOR falls under the category of Broken Access Control. Broken access control means that an attacker can access information or perform actions not intended for them. Consider the case where a web server receives user-supplied input to retrieve objects (files, data, documents) and that they are numbered sequentially. Let’s say that the user has permission to access a photo named IMG_1003.JPG. We might guess that there are also IMG_1002.JPG and IMG_1004.JPG; however, the web application should not provide us with that image even if we figured out its name. In general, an IDOR vulnerability can occur if too much trust has been placed on that input data. In other words, the web application does not validate whether the user has permission to access the requested object.</p><br>
+
+                            <p>Just providing the correct URL for a user or a product does not necessarily mean the user should be able to access that URL. For instance, consider the product page https://store.tryhackme.thm/products/product?id=52. We can expect this URL to provide details about product number 52. In the database, items would be assigned numbers sequentially. The attacker would try other numbers such as 51 or 53 instead of 52; this might reveal other retired or unreleased products if the web application is vulnerable.</p><br>
+
+                            <p>Let’s consider a more critical example; the URL https://store.tryhackme.thm/customers/user?id=16 would return the user with id=16. Again, we expect the users to have sequential ID numbers. The attacker would try other numbers and possibly access other user accounts. This vulnerability might work with sequential files; for instance, if the attacker sees 007.txt, the attacker might try other numbers such as 001.txt, 006.txt, and 008.txt. Similarly, if you were ID number 16 and ID number 17 was another user, by changing the ID to 17, you could see sensitive data that belongs to another user. Likewise, they can change the ID to 16 and see sensitive data that belongs to you. (Of course, we assume here that the system is vulnerable to IDOR.)</p><br>
+
+                            <p>Click on “View Site,” and let’s see this in action. You will see a page showing an Inventory Management System. If you click on the “Planned Shipments” tab, you will discover that an attacker has managed to mix things up as part of sabotage plans. Notice how they send the wrong tires to each assembly line; for instance, they assign scooter tires and motorcycle tires to bike assembly! If left unfixed, all tires will go to the wrong assembly.</p><br>
+
+                            <p>We will hack the system back and undo the attacker’s steps. On “Your Activity,” you can see the activity of one of the users. We have reason to believe that this website has an IDOR vulnerability.</p><br>
+                        </div>
+                        <div class="task-question">
+                            <div class="question-title">
+                                <h1>Answer The Question Below</h1>
+                                <hr>
+                            </div>
+                            <div class="task-text">
+                                <p>Check the other users to discover which user account was used to make the malicious changes and revert them. After reverting the changes, what is the flag that you have received?</p>
+                            </div>
+                            <form class="question-submition" onsubmit="showCorrectAnswer(event)">
+                                <input class="input" type="text" placeholder="Answer">
+                                <input class="button" type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="main">
+                <div class="tag">
+                    <h1>Core Team</h1>
+                    <div class="social_link">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="copyright">
+                        <p>Copyright © 2024 <a href="#">Core</a> All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var headers = document.querySelectorAll('.task-header');
+        
+            headers.forEach(function(header) {
+                header.addEventListener('click', function() {
+                    // Find the current task's content
+                    var taskContent = this.nextElementSibling;
+        
+                    // Hide all task contents
+                    document.querySelectorAll('.task-content').forEach(function(content) {
+                        if (content !== taskContent) {
+                            content.style.display = 'none'; // Hide other task contents
+                        }
+                    });
+        
+                    // Toggle the visibility of the current task's content
+                    taskContent.style.display = taskContent.style.display === 'none' || taskContent.style.display === '' ? 'block' : 'none';
+                });
+            });
+        
+            document.querySelectorAll('.question-submition').forEach(function(form) {
+                form.addEventListener('submit', function(event) {
+                    event.preventDefault(); // Prevent the form from submitting normally
+                    
+                    var task = this.closest('.task');
+                    var icon = task.querySelector('.icon-correct-answer');
+                    var header = task.querySelector('.task-header-correct-answer');
+                    
+                    icon.style.display = 'block'; // Show the icon
+                    header.style.borderLeftColor = 'rgb(32, 199, 32)'; // Change the border color
+                });
+            });
+        });
+        </script>
+         <script>
+            const navBar = document.querySelector('nav');
+    
+            function toggleBlurOnScroll() {
+                if (window.scrollY > 50) {
+                    navBar.classList.add('blurred');
+                } else {
+                    navBar.classList.remove('blurred');
+                }
+            }
+    
+            window.addEventListener('scroll', toggleBlurOnScroll);
+        </script>
+        <script src="../../../javaScript/progress.js"></script>
+</body>
+</html>

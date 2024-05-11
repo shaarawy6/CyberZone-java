@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubuntu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/styleUbuntu.css">
+    <link rel="icon" href="../images/Hacker.png" type="images/x-icon">
+    <style>
+        .ubuntu{
+            text-align: center;
+            text-decoration: none;
+            font-size: 52px;
+            background-image: linear-gradient(45deg, rgb(60, 2, 2), #4100a3, #ec2f20,
+                                                     rgb(60, 2, 2), #4100a3, #ec2f20,
+                                                     rgb(60, 2, 2), #4100a3, #ec2f20,
+                                                     rgb(60, 2, 2), #4100a3, #ec2f20); 
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-size: 400% 400%;
+            animation: animate 15s ease infinite;
+        }
+        @keyframes animate{
+        0%{
+            background-position: 0 0;
+        }
+        25%{
+            background-position: 100% 0;
+        }
+        50%{
+            background-position: 100% 100%;
+        }
+        75%{
+            background-position: 0 100%;
+        }
+        100%{
+            background-position: 0 0;
+        }
+    }
+    i{
+        font-size: 50px;
+    }
+    .kasm{
+        display:flex;
+    }
+    .kasm-img{
+        width: 50%;
+        padding: 5px;
+    }
+    </style>
+
+</head>
+<body>
+    <div class="Ubunto">
+        <nav>
+            <div class="all">
+                <div class="logo">
+                    <a href="../html/index.html"><h1><span>Cyber</span>zone</h1></a>
+                </div>
+                <div class="choice"> <!--choice for desktop-->
+                    <a href="../html/home.html">Home</a> <!--<i></i> tag "icon"-->
+                    <a href="../html/paths.html">Paths</a>
+                    <a href="../html/modules.html">Modules</a>
+                    <a href="../jsp/downloads.jsp">Downloads</a>
+                    <a href="https://cyberzone1.pythonanywhere.com/">Apps</a>
+                    <a href="../html/ubuntu.html">Ubuntu</i></a>
+                </div>
+                <div class="register">
+                    <a href="../html/sign-in.html" class="login"><button >Login</button></a>
+                    <a href="../html/sign-up.html" class="signup"><button >Sign Up</button></a>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="review" id="About">
+                <i class="fa-regular fa-hand-point-right"></i>
+                <a class = "ubuntuOperationSystem" href="https://73ba-154-176-92-127.ngrok-free.app"><h1>Ubuntu Operating System</h1></a>
+                <div class="describtion">
+                    <h1>Information</h1>
+                    <p class="username">
+                        <strong>Username: </strong>user@kasm.local
+                    </p>&ensp;
+                    <p class="password"> 
+                        <strong>Password: </strong> Z3Sxabaxr1pvH
+                    </p>
+                </div>
+                <div class="review_box">
+                    <div class="profile_image" style="background-image: url(../images/image.png);">
+                    </div>
+                </div>   
+                <div class="review_box">
+                    <div class="profile_image" style="background-image: url(../images/image2.png);">
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <footer>
+            <div class="main">
+                <div class="tag">
+                    <h1>Core Team</h1>
+                    <div class="social_link">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="copyright">
+                        <p>Copyright © 2024 <a href="#">Core</a> All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const navBar = document.querySelector('nav');
+
+        function toggleBlurOnScroll() {
+            if (window.scrollY > 50) {
+                navBar.classList.add('blurred');
+            } else {
+                navBar.classList.remove('blurred');
+            }
+        }
+
+        window.addEventListener('scroll', toggleBlurOnScroll);
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+    <script type="text/javascript">
+        const options = {
+            background: {
+                color: "transparent",
+            },
+            interactivity: {
+                events: {
+                    onClick: {
+                        enable: true,
+                        mode: "push",
+                    },
+                    onHover: {
+                        enable: true,
+                        mode: "repulse",
+                    },
+                },
+                modes: {
+                    push: {
+                        quantity: 1,
+                    },
+                    repulse: {
+                        distance: 100,
+                    },
+                },
+            },
+            particles: {
+                color: {
+            value: "#ec2f20", 
+                },
+                links: {
+                    enable: true,
+                    opacity: 0.5,
+                    distance: 200,
+                    color: "#ec2f20",
+                },
+                move: {
+                    enable: true,
+                    speed: { min: 1, max: 2 },
+                },
+                opacity: {
+                    value: { min: 0.3, max: 0.5 },
+                },
+                size: {
+                    value: { min: 1, max: 2 },
+                },
+            },
+        };
+
+        if (window.matchMedia("(max-width: 480px)").matches) {
+            options.particles.size.value.min = 1;
+            options.particles.size.value.max = 2;
+            options.particles.links.opacity = 0.4; 
+            options.particles.move.speed.min = 0.2;
+            options.particles.move.speed.min = 0.3;
+            options.particles.links.distance = 110;
+            options.particles.links.color = "#ff0000";
+            options.particles.color= "#ff0000"
+        }
+      
+        tsParticles.load("tsparticles", options);
+    </script>
+    <script src="../javaScript/progress.js"></script>
+</body>
+</html>

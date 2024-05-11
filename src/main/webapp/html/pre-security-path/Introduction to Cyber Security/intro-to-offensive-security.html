@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Offensive Security</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../../../css/section-page.css">
+    <link rel="icon" href="../../../images/Introduction-to-Cyber-Security-module-path2.png" type="images/x-icon">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+    <script src="../../../javaScript/particles-config.js"></script>
+    <main class="container">
+        <nav>
+            <div class="all">
+                <div class="logo">
+                    <a href="../../../html/index.html"><h1><span>Cyber</span>zone</h1></a>
+                </div>
+                <div class="choice"> <!--choice for desktop-->
+                    <a href="../../../html/home.html">Home</a> <!--<i></i> tag "icon"-->
+                    <a href="../../../html/paths.html">Paths</a>
+                    <a href="../../../html/modules.html">Modules</a>
+                    <a href="../../../jsp/downloads.jsp">Downloads</a>
+                    <a href="https://cyberzone1.pythonanywhere.com/">Apps</a>
+                    <a href="../../../html/ubuntu.html">Ubuntu</i></a>
+                </div>
+                <div class="register">
+                    <a href="../../../html/sign-in.html" class="login"><button >Login</button></a>
+                    <a href="../../../html/sign-up.html" class="signup"><button >sign up</button></a>
+                </div>
+            </div>
+        </nav>
+        <div class="banner-container">
+            <div class="banner">
+                <img class = "banner-icon" src="../../../images/Introduction-to-Cyber-Security-module-path2.png" style="margin-left: -20px;">
+                <div class = "banner-text" style="padding-left: 30px;">
+                    <h1>Introduction to Offensive Security</h1>
+                    <p>Hack your first website (legally in a safe environment) and experience an ethical hacker's job.</p>
+                </div>
+            </div>
+        </div>
+        <div class = "content">
+            <div class="tasks">
+                <div class="task">
+                    <div class="task-header task-header-correct-answer">
+                        <div class="task-left">
+                            <h4>Task 1</h4>
+                            <i class="fa-solid fa-circle-check icon-correct-answer"></i>
+                            <p>What is Offensive Security?</p>
+                        </div>
+                    </div>
+                    <div class="task-content">
+                        <div class="task-text">
+                            <p>In short, offensive security is the process of breaking into computer systems, exploiting software bugs, and finding loopholes in applications to gain unauthorized access to them.
+                                To beat a hacker, you need to behave like a hacker, finding vulnerabilities and recommending patches before a cybercriminal does, as you'll do in this room!                                
+                            </p>
+                            <br>
+                            <p>On the flip side, there is also defensive security, which is the process of protecting an organization's network and computer systems by analyzing and securing any potential digital threats; learn more in the digital forensics room.
+                                In a defensive cyber role, you could be investigating infected computers or devices to understand how it was hacked, tracking down cybercriminals, or monitoring infrastructure for malicious activity.
+                            </p>
+                        </div>
+                        <div class="task-question">
+                            <div class="question-title">
+                                <h1>Answer The Question Below</h1>
+                                <hr>
+                            </div>
+                            <div class="task-text">
+                                <p>Which of the following options better represents the process where you simulate a hacker's actions to find vulnerabilities in a system?
+                                    <ul style="padding: 20px 0 0 55px;">
+                                        <li>Offensive Security</li>
+                                        <li>Defensive Security</li>
+                                    </ul>
+                                </p>
+                            </div>
+                            <form class="question-submition" onsubmit="showCorrectAnswer(event)">
+                                <input class="input" type="text" placeholder="Answer">
+                                <input class="button" type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="task">
+                    <div class="task-header task-header-correct-answer">
+                        <div class="task-left">
+                            <h4>Task 2</h4>
+                            <i class="fa-solid fa-circle-check icon-correct-answer"></i>
+                            <p>Hacking your first machine</p>
+                        </div>
+                    </div>
+                    <div class="task-content">
+                        <div class="task-text">
+                            <p>Before going into cyber security careers and what offensive security is, let's get you hacking (and yes, its legal, all exercises are fake simulations)</p>
+                            <br>
+                            <p>Your first hack</p>
+                            <p>Click the "Start Machine" button. Once loaded in Split View in your browser, you will have access to a machine you'll use to hack a fake bank application called FakeBank. If you don't see the machine appear, use the blue Show Split View button on the top-left of this page.</p>
+                            <br>  
+                            <p>We will use a command-line application called "GoBuster" to brute-force FakeBank's website to find hidden directories and pages. GoBuster will take a list of potential page or directory names and tries accessing a website with each of them; if the page exists, it tells you.</p>
+                            <br>
+                            <br>
+                            <p style="font-weight: bold;color: #ec2f20;font-size: 25px;">Step 1) Open a terminal</p>
+                            <br>
+                            <p>A terminal, also known as the command-line, allows us to interact with a computer without using a graphical user interface.</p>
+                            <br>
+                            <p style="font-weight: bold;color: #ec2f20;font-size: 25px;">Step 2) Find hidden website pages</p>
+                            <br>
+                            <p>Most companies will have an admin portal page, giving their staff access to basic admin controls for day-to-day operations. For a bank, an employee might need to transfer money to and from client accounts. Often these pages are not made private, allowing attackers to find hidden pages that show, or give access to, admin controls or sensitive data.</p>
+                            <br>
+                            <p>Type the following command into the terminal to find potentially hidden pages on FakeBank's website using GoBuster (a command-line security application).</p>
+                            <br>
+                            <p>gobuster -u http://fakebank.com -w wordlist.txt dir</p>
+                            <br>
+                            <p>In the command above, -u is used to state the website we're scanning, -w takes a list of words to iterate through to find hidden pages.</p>
+                            <br>
+                            <p>You will see that GoBuster scans the website with each word in the list, finding pages that exist on the site. GoBuster will have told you the pages it found in the list of page/directory names (indicated by Status: 200).</p>
+                            <br>
+                            <p style="font-weight: bold;color: #ec2f20;font-size: 25px;">Step 3) Hack the bank</p>
+                            <br>
+                            <p>This page allows an attacker to steal money from any bank account, which is a critical risk for the bank. As an ethical hacker, you would (with permission) find vulnerabilities in their application and report them to the bank to fix before a hacker exploits them.</p>
+                            <br>
+                            <p>Transfer $2000 from the bank account 2276, to your account (account number 8881).</p>
+                        </div>
+                        <div class="task-question">
+                            <div class="question-title">
+                                <h1>Answer The Question Below</h1>
+                                <hr>
+                            </div>
+                            <div class="task-text">
+                                <p>If your transfer was successful, you should now be able to see your new balance reflected on your account page. Go there now and confirm you got the money! (You may need to hit Refresh for the changes to appear)</p>
+                                <br>
+                                <p>Above your account balance, you should now see a message indicating the answer to this question. Can you find the answer you need?</p>
+                            </div>
+                            <form class="question-submition" onsubmit="showCorrectAnswer(event)">
+                                <input class="input" type="text" placeholder="Answer">
+                                <input class="button" type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="task">
+                    <div class="task-header task-header-correct-answer">
+                        <div class="task-left">
+                            <h4>Task 3</h4>
+                            <i class="fa-solid fa-circle-check icon-correct-answer"></i>
+                            <p>Careers in cyber security</p>
+                        </div>
+                    </div>
+                    <div class="task-content">
+                        <div class="task-text">
+                            <p style="font-size: 25px;"><b>How can I start learning?</b></p>
+                            <br>
+                            <p>People often wonder how others become hackers (security consultants) or defenders (security analysts fighting cybercrime), and the answer is simple. Break it down, learn an area of cyber security you're interested in, and regularly practice using hands-on exercises. Build a habit of learning a little bit each day on TryHackMe, and you'll acquire the knowledge to get your first job in the industry.</p>
+                            <br>
+                            <p>Trust us; you can do it! Just take a look at some people who have used TryHackMe to get their first security job:</p>
+                            <ul style="padding: 20px 0 0 55px;">
+                                <li>Paul went from a construction worker to a security engineer.</li>
+                                <li>Kassandra went from a music teacher to a security professional.</li>
+                                <li>Brandon used TryHackMe while at school to get his first job in cyber.</li>
+                            </ul>
+                            <br>
+                            <p style="font-size: 25px;"><b>What careers are there?</b></p>
+                            <br>
+                            <p>The cyber careers room goes into more depth about the different careers in cyber. However, here is a short description of a few offensive security roles:</p>
+                            <ul style="padding: 20px 0 0 55px;">
+                                <li>enetration Tester - Responsible for testing technology products for finding exploitable security vulnerabilities.</li>
+                                <li>Red Teamer - Plays the role of an adversary, attacking an organization and providing feedback from an enemy's perspective..</li>
+                                <li>Security Engineer - Design, monitor, and maintain security controls, networks, and systems to help prevent cyberattacks.</li>
+                            </ul>
+                        </div>
+                        <div class="task-question">
+                            <div class="question-title">
+                                <h1>Answer The Question Below</h1>
+                                <hr>
+                            </div>
+                            <div class="task-text">
+                                <p>Read the above, and continue with the next room!</p>
+                            </div>
+                            <form class="question-submition" onsubmit="showCorrectAnswer(event)">
+                                <input class="input" type="text" placeholder="Answer">
+                                <input class="button" type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="main">
+                <div class="tag">
+                    <h1>Core Team</h1>
+                    <div class="social_link">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="copyright">
+                        <p>Copyright © 2024 <a href="#">Core</a> All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var headers = document.querySelectorAll('.task-header');
+        
+            headers.forEach(function(header) {
+                header.addEventListener('click', function() {
+                    // Find the current task's content
+                    var taskContent = this.nextElementSibling;
+        
+                    // Hide all task contents
+                    document.querySelectorAll('.task-content').forEach(function(content) {
+                        if (content !== taskContent) {
+                            content.style.display = 'none'; // Hide other task contents
+                        }
+                    });
+        
+                    // Toggle the visibility of the current task's content
+                    taskContent.style.display = taskContent.style.display === 'none' || taskContent.style.display === '' ? 'block' : 'none';
+                });
+            });
+        
+            document.querySelectorAll('.question-submition').forEach(function(form) {
+                form.addEventListener('submit', function(event) {
+                    event.preventDefault(); // Prevent the form from submitting normally
+                    
+                    var task = this.closest('.task');
+                    var icon = task.querySelector('.icon-correct-answer');
+                    var header = task.querySelector('.task-header-correct-answer');
+                    
+                    icon.style.display = 'block'; // Show the icon
+                    header.style.borderLeftColor = 'rgb(32, 199, 32)'; // Change the border color
+                });
+            });
+        });
+        </script>
+         <script>
+            const navBar = document.querySelector('nav');
+    
+            function toggleBlurOnScroll() {
+                if (window.scrollY > 50) {
+                    navBar.classList.add('blurred');
+                } else {
+                    navBar.classList.remove('blurred');
+                }
+            }
+    
+            window.addEventListener('scroll', toggleBlurOnScroll);
+        </script>
+        <script src="../../../javaScript/progress3.js"></script>
+</body>
+</html>

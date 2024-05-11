@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/stylePaths.css">
+    <link rel="icon" href="../images/Hacker.png" type="images/x-icon">
+    <title>Paths</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="all">
+                <div class="logo">
+                    <a href="../html/index.html"><h1><span>Cyber</span>zone</h1></a>
+                </div>
+                <div class="choice"> <!--choice for desktop-->
+                    <a href="../html/home.html">Home</a> <!--<i></i> tag "icon"-->
+                    <a href="../html/paths.html">Paths</a>
+                    <a href="../html/modules.html">Modules</a>
+                    <a href="../jsp/downloads.jsp">Downloads</a>
+                    <a href="https://cyberzone1.pythonanywhere.com/">Apps</a>
+                    <a href="../html/ubuntu.html">Ubuntu</i></a>
+                </div>
+                <div class="register">
+                    <a href="../html/sign-in.html" class="login"><button >Login</button></a>
+                    <a href="../html/sign-up.html" class="signup"><button >sign up</button></a>
+                </div>
+            </div>
+        </nav>
+        <div class="content" id="Content">
+            <div class="box">
+                <a href="../html/introduction-to-cybersecurity-path/path-page.html">
+                    <div class="card path-1" id="Modules" style="background-image: url(../images/path-1.png);background-size: 570px;background-position: 10px -10px ;">
+                        <div class="content_text">
+                            <h2>Introduction to Cyber Security</h2>
+                            <p>
+                                Get started in cyber security by hacking your first application and defending 
+                                against a live cyber attack in a simulated lab environment. Learn about the different 
+                                cyber careers, roles, and skills required to get your first job in the industry.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="../html/pre-security-path/path2-page.html">
+                    <div class="card path-2" id="Modules" style="background-image: url(../images/Pre-Security-path.png);background-size: 570px;background-position: 10px -10px ;">
+                        <div class="content_text">
+                            <h2>Pre Security</h2>
+                            <p>Cyber security is often thought to be a magical process that can only be done by the elite, and TryHackMe is here to show you that's
+                                not the case. Anyone, with any experience level, can learn cyber security and this Pre-Security learning path is the place to start.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <footer>
+            <div class="main" style="padding-top: 150px;">
+                <div class="tag">
+                    <h1>Core Team</h1>
+                    <div class="social_link">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="copyright">
+                        <p>Copyright © 2024 <a href="#">Core</a> All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const navBar = document.querySelector('nav');
+
+        function toggleBlurOnScroll() {
+            if (window.scrollY > 50) {
+                navBar.classList.add('blurred');
+            } else {
+                navBar.classList.remove('blurred');
+            }
+        }
+
+        window.addEventListener('scroll', toggleBlurOnScroll);
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+    <script src="../javaScript/particles-config.js"></script>
+    <script src="../javaScript/progress.js"></script>
+</body>
+</html>

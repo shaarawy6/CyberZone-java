@@ -1,0 +1,410 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    color: white;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background: rgb(0, 0, 0);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: transparent;
+    position: fixed;
+    padding-top: 47px;
+    padding-bottom: 47px;
+    width: 100%;
+    border-radius: 10px;
+    z-index: 100;
+}
+
+nav .all {
+    display: flex;
+    position: absolute;
+}
+
+nav .register {
+    width: 250px;
+    margin-top: 15px;
+    margin-left: 60px;
+}
+
+nav .logo{
+    font-size: 23px;
+    cursor: pointer;
+    position: relative;
+    right: 5.5%;
+    color: #ffffff;
+    width: 100px;
+    margin: 10px 130px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav .register button {
+    width: 90px;
+    letter-spacing: 0;
+}
+
+nav .register .signup button{
+    cursor: pointer;
+    font-size: 15px;
+    margin: 8px;
+    padding: 8px;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: none;
+    box-shadow: 0 0 3px#ffffff41;
+    transition: 1s;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    background-color: #ec2e2083;
+    transition: 1s;
+}
+
+nav .register .signup button:hover {
+    text-decoration: none;
+    border: none;
+    box-shadow: 0 0 10px#ec2f20;
+    transition: 1s;
+}
+
+nav .register button {
+    border-radius: 45px;
+}
+
+nav .register .login button{
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 15px;
+    width: 80px;
+    margin: 8px;
+    padding: 8px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: none;
+    color: #ec2f20;
+    box-shadow: 0 0 2px#ec2f20;
+    font-weight: bold;
+    transition: 1s;
+}
+
+nav .register .login button:hover {
+    text-decoration: none;
+    border: none;
+    box-shadow: 0 0 10px#ec2f20;
+    transition: 1s;
+}
+
+nav .logo span{
+    transition: 0.7s;
+}
+
+nav .logo span:hover{
+    color: #ec2f20;
+    transition: 0.7s;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav .choice{
+    padding-left: 130px;
+    padding-right: 100px;
+    margin-left: -36px;
+    margin-right: 1px;
+    padding-top: 25px;
+    width: 750px;
+    z-index: 1000;
+}
+
+nav .choice a{
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 8px 8px 8px 8px;
+    left: 80%;
+    transition: 1s;
+    z-index: 1000;
+}
+
+nav .choice a:hover {
+    text-decoration: underline;
+    color: #ec2f20;
+    transition: 1s;
+}
+
+nav.blurred {
+    backdrop-filter: blur(10px); /* Apply backdrop filter for blur effect */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease; /* Smooth transition */
+}
+
+.login-form {
+    border: 1px solid transparent; /* Initial transparent border */
+    animation: pulse 3s infinite alternate; /* Animation for the red shadow */
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 51%;
+    transform: translate(-50%,-50%); /*position of the form*/
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    background: #0f0f0f8d;
+    padding: 65px 50px 80px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 0 0 15px 5px rgba(233, 26, 11, 0.8);
+    z-index: 1; /*34an el form tkon a3la mn el net wl net tzhr wraha*/
+}
+
+.text {
+    font-size: 40px;
+    text-align: center;
+    color: #c7c7c7;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+form {
+    margin-top: 40px;
+}
+
+.field {
+    margin-top: 30px;
+    display: flex;
+}
+
+.field .fas { /*envelope & lock*/
+    height: 50px;
+    width: 70px;
+    color: #868686;
+    font-size: 25px;
+    line-height: 50px;
+    padding-left: 20px;
+    border: 1px solid #444;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    background: linear-gradient(#222222, #121212);
+}
+
+.field input,
+form .submit-button {
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 19px;
+    color: #868686;
+    padding: 0 15px;
+    border-radius: 0 5px 5px 0;
+    border: 1px solid #3f3636;
+    caret-color: white;
+    background: linear-gradient(#222222, #121212);
+}
+
+input:focus {
+    color: white;
+    box-shadow: 0 0 5px #79160f, inset 0 0 5px #5e100b;
+    background: linear-gradient(#8f241c00, #3d151500);
+    animation: glow 1s ease-out infinite alternate;
+}
+
+@keyframes glow {  /*ms2ol 3n el animation bta3 el fields*/
+    0% {
+        border-color: #ec2f20;
+        box-shadow: 0 0 2px #79160f, inset 0 0 2px rgba(0, 0, 0, 0.1);
+    }
+    100% {
+        border-color: #e91a0b;
+        box-shadow: 0 0 4px #ec2f20, inset 0 0 8px #b12218;
+    }
+}
+
+button {
+    margin-top: 40px;
+    border-radius: 10px !important;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+button:hover {  /*:hover 4kl el element b3d ma bn4awr 3lehbl cursor*/
+    color: #e91a0b;
+    border: 1px solid #e91a0b;
+    box-shadow: 0 0 5px #79160f, 0 0 10px #5e100b, 0 0 15px #3b0a06, 0 2px 0 black;
+    background: linear-gradient(#8f241c00, #3d151500);
+}
+
+.submit-button {
+    margin-top: 40px;
+    border-radius: 10px !important;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.submit-button:hover {  /*:hover 4kl el element b3d ma bn4awr 3lehbl cursor*/
+    color: #e91a0b;
+    border: 1px solid #e91a0b;
+    box-shadow: 0 0 5px #79160f, 0 0 10px #5e100b, 0 0 15px #3b0a06, 0 2px 0 black;
+    background: linear-gradient(#8f241c00, #3d151500);
+    transition: 1s;
+}
+
+.link {
+    margin-top: 50px;
+    font-size: 17px;
+    color: #868686;
+}
+
+.link a {
+    color: #e91a0b;
+    text-decoration: none;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 10px rgba(233, 26, 11, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(233, 26, 11, 0.8);
+    }
+}
+
+footer{
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+}
+
+footer .main{
+    width: 100%;
+    height: 190px;
+    background-color: #00000071;
+    display: flex;
+    padding-top: 710px;
+    margin-top: 200px;
+    justify-content: space-around;
+}
+
+footer .main .tag{
+    margin: 10x 0;
+}
+
+footer .main .tag .center{
+    text-align: center;
+}
+
+footer .main .tag h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 45px;
+    text-transform: uppercase;
+    background-image: linear-gradient(45deg, rgb(60, 2, 2), #4100a3, #ec2f20,
+    rgb(60, 2, 2), #4100a3, #ec2f20,
+    rgb(60, 2, 2), #4100a3, #ec2f20,
+    rgb(60, 2, 2), #4100a3, #ec2f20); 
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 400% 400%;
+    animation: animate 15s ease infinite;
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0 0;
+    }
+    25%{
+        background-position: 100% 0;
+    }
+    50%{
+        background-position: 100% 100%;
+    }
+    75%{
+        background-position: 0 100%;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+
+footer .main .tag .social_link{
+    display: flex;
+}
+
+footer .main .tag .social_link a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.511);
+    border: 1px solid rgba(255, 255, 255, 0.459);
+    position: relative;
+    left: 9%;
+    margin: 5px 5px;
+    margin-top: 40px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    z-index: 10;
+    box-shadow: 0 0 20px 10px rgba(0,0,0,0.05);
+}
+
+footer .main .tag .social_link a .fa-brands{
+    font-size: 22px;
+    line-height: 40px;
+    z-index: 10;
+    position: relative;
+    transition: 1s;
+}
+
+footer .main .tag .social_link a:hover i{
+    color: #ec2f20;
+    transition: 1s;
+}
+
+footer .main .tag .copyright {
+    color: rgba(255, 255, 255, 0.53);
+    font-size: 11px;
+    font-family: "Poppins", sans-serif;
+    padding-top: 25px;
+    margin-left: 8px;
+}
+
+footer .main .tag .copyright a {
+    color: #ec2f20;
+}
+
+footer .main .tag .copyright a:hover {
+    color: white;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/path-page.css">
+    <link rel="icon" href="../images/Linux-Fundamentals-module.png" type="images/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Linux Fundamentals</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+    <script src="../javaScript/particles-config.js"></script>
+
+    <main class="container">
+        <nav>
+            <div class="all">
+                <div class="logo">
+                    <a href="../html/index.html"><h1><span>Cyber</span>zone</h1></a>
+                </div>
+                <div class="choice"> <!--choice for desktop-->
+                    <a href="../html/home.html">Home</a> <!--<i></i> tag "icon"-->
+                    <a href="../html/paths.html">Paths</a>
+                    <a href="../html/modules.html">Modules</a>
+                    <a href="../jsp/downloads.jsp">Downloads</a>
+                    <a href="https://cyberzone1.pythonanywhere.com/">Apps</a>
+                    <a href="../html/ubuntu.html">Ubuntu</i></a>
+                </div>
+                <div class="register">
+                    <a href="../html/sign-in.html" class="login"><button >Login</button></a>
+                    <a href="../html/sign-up.html" class="signup"><button >sign up</button></a>
+                </div>
+            </div>
+        </nav>
+        <div class="section">
+            <section class="small-card" style="margin-top: 83px;">
+                <div class="card blurred">
+                    <img class="card-img-top" src="../images/Linux-Fundamentals-module.png">
+                    <div class="card-body">
+                        <p>Before diving into Linux, grasp the fundamentals:</p>
+                        <ul>
+                            <li>Linux basics</li>
+                            <li>File system navigation</li>
+                            <li>Command-line essentials</li>
+                            <li>Common administrative tasks</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="big-card">
+            <header class="top-nav">
+                <div class="introduction">
+                    <div class="container">
+                        <div class="headline">LEARNING PATH</div>
+                        <div class="path-title-summary">Linux Fundamentals</div>
+                        <p class="path-desc-summary">
+                            Master essential Linux skills, from command line navigation to system administration tasks, in our comprehensive module. Ideal for beginners and professionals alike.
+                        </p>
+                    </div>
+                </div>
+            </header>
+                <div class="card blurred" style="margin-top: 83px;">
+                    <div class="card-body">
+                        <div class="path-intro">
+                            <h3>Introduction</h3>
+                            <p class="path-desc-summary">
+                                Discover the power of Linux with our "Linux Fundamentals" module.</p>
+                            <br>
+                        </div>
+                        
+                        <div>
+                            <form action="../jsp/enrollment.jsp" method="POST">
+                                <div class="path-sum-section">
+                                    <div class="path-sum-chapter">Module</div>
+                                    <div class="path-sum-title">
+                                        <img class="path-sum-room-img" src="../html/pre-security-path/images/Linux-Fundamentals-module.png"> 
+                                        <h2>Linux Fundamentals</h2>
+                                        <input type="hidden" name="moduleId" value="3">
+                                         
+                                    </div>
+                                    <div>
+                                        <a class="path-sum-room" href="../html/pre-security-path/Linux Fundamentals/linux-fundamentals-part1.html">
+                                            <h3>Linux Fundamentals Part 1</h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div class="main">
+                    <div class="tag">
+                        <h1>Core Team</h1>
+                        <div class="social_link">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                        <div class="copyright">
+                            <p>Copyright © 2024 <a href="#">Core</a> All rights reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </main>
+
+    <script>
+        const navBar = document.querySelector('nav');
+
+        function toggleBlurOnScroll() {
+            if (window.scrollY > 50) {
+                navBar.classList.add('blurred');
+            } else {
+                navBar.classList.remove('blurred');
+            }
+        }
+
+        window.addEventListener('scroll', toggleBlurOnScroll);
+    </script>
+    <script src="../javaScript/progress.js"></script>
+</body>
+</html>

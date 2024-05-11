@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="icon" href="../images/Hacker.png" type="images/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="container">
+        <!-- start test -->
+        <nav>
+            <div class="all">
+                <div class="logo">
+                    <a href="../html/index.html"><h1><span>Cyber</span>zone</h1></a>
+                </div>
+                <div class="choice">
+                    <a href="../html/home.html">Home</a>
+                    <a href="../html/paths.html">Paths</a>
+                    <a href="../html/modules.html">Modules</a>
+                    <a href="../jsp/downloads.jsp">Downloads</a>
+                    <a href="https://cyberzone1.pythonanywhere.com/">Apps</a>
+                    <a href="../html/ubuntu.html">Ubuntu</a>
+                </div>
+                <div class="register">
+                    <a href="../html/sign-in.html" class="login"><button>Login</button></a>
+                    <a href="../html/sign-up.html" class="signup"><button>Sign Up</button></a>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="content" id="Content">
+            <div class="box">
+                <a href="../html/paths.html">
+                    <div class="card" id="Paths" style="background-image: url('../images/paths-img.webp');">
+                            <div class="content_text">
+                                <h2>PATHS</h2>
+                            </div>
+                    </div>
+                </a>
+                <a href="../html/modules.html">
+                    <div class="card" id="Modules" style="background-image: url('../images/modules-img.webp');">
+                        <div class="content_text">
+                            <h2>MODULES</h2>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://cyberzone1.pythonanywhere.com/">
+                    <div class="card" id="Applications" style="background-image: url('../images/applications-img.webp');">
+                        <div class="content_text">
+                            <h2>APPLICATIONS</h2>
+                        </div>
+                    </div>
+                </a>
+                <a href="../jsp/downloads.jsp">
+                    <div class="card" id="Downloads" style="background-image: url('../images/downloads-img.webp');">
+                        <div class="content_text">
+                            <h2>DOWNLOADS</h2>
+                        </div>
+                    </div>
+                </a>
+        </div>
+            <div class="about-us" id="About">
+                <h1>About Us</h1>
+                <div class="describtion">
+                    <h1>Cyberzone Developers</h1>
+                    <p>
+                        "We are students at AASTMT, and this website is a project for our Web Programming, Advanced Programming, Software Engineering, and CyberSecurity courses. We have developed this website as a project that encompasses all these courses to create CyberZone."
+                    </p>
+                </div>
+                <div class="about-us_box">
+                    <div class="about-us_card">
+                        <div class="card_top">
+                            <div class="profile">
+                                <div class="profile_image">
+                                    <img src="../images/shahd.jpg">
+                                </div>
+                                <div class="name">
+                                    <strong>Shahd Wagdy</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="about-us_card">
+                        <div class="card_top">
+                            <div class="profile">
+                                <div class="profile_image">
+                                    <img src="../images/43rawy.jpg">
+                                </div>
+                                <div class="name">
+                                    <strong>Mohamed Elshaarawy</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="about-us_card">
+                        <div class="card_top">
+                            <div class="profile">
+                                <div class="profile_image">
+                                    <img src="../images/ahmed.jpg">
+                                </div>
+                                <div class="name">
+                                    <strong>Ahmed Abdallah</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-us_card">
+                        <div class="card_top">
+                            <div class="profile">
+                                <div class="profile_image">
+                                    <img src="../images/mostafa.jpg">
+                                </div>
+                                <div class="name">
+                                    <strong>Mostafa Helmy</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="main">
+                    <div class="tag">
+                        <h1>Core Team</h1>
+                        <div class="social_link">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                        <div class="copyright">
+                            <p>Copyright © 2024 <a href="#">Core</a> All rights reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div> 
+    </div>
+
+    <script>
+        const navBar = document.querySelector('nav');
+
+        function toggleBlurOnScroll() {
+            if (window.scrollY > 50) {
+                navBar.classList.add('blurred');
+            } else {
+                navBar.classList.remove('blurred');
+            }
+        }
+
+        window.addEventListener('scroll', toggleBlurOnScroll);
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+    <script src="../javaScript/particles-config.js"></script>
+    <script src="../javaScript/progress.js"></script>
+        
+</body>
+</html>
